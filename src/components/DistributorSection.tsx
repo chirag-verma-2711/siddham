@@ -292,10 +292,12 @@ export function DistributorSection() {
                 />
               </div>
 
-              <ReCAPTCHA
-                sitekey="6LcaQUYsAAAAAKSU8-cg7KEcPloE6sECZ3M7Y8a9"
-                onChange={(token) => setCaptchaToken(token)}
-              />
+              {typeof window !== "undefined" && (
+                <ReCAPTCHA
+                  sitekey="6LcaQUYsAAAAAKSU8-cg7KEcPloE6sECZ3M7Y8a9"
+                  onChange={(token) => setCaptchaToken(token)}
+                />
+              )}
 
               <Button
                 type="submit"
