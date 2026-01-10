@@ -294,7 +294,7 @@ export function DistributorSection() {
 
               {typeof window !== "undefined" && (
                 <ReCAPTCHA
-                  sitekey="6LcaQUYsAAAAAKSU8-cg7KEcPloE6sECZ3M7Y8a9"
+                  sitekey="6LeWSUYsAAAAAL3ITdlo7x4uxcQ3FGJQ9G30A8kk"
                   onChange={(token) => setCaptchaToken(token)}
                 />
               )}
