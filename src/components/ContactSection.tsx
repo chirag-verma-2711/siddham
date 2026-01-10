@@ -94,7 +94,8 @@ export function ContactSection() {
 
     try {
       const response = await fetch(
-        "http://localhost/steel-tiffins/backend/insert_contact.php",
+        "https://vibrantlivingblog.com/steel-tiffins/backend/insert_contact.php",
+        // "http://localhost/steel-tiffins/backend/insert_contact.php",
         {
           method: "POST",
           headers: {

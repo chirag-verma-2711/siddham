@@ -50,7 +50,8 @@ export function DistributorSection() {
 
     try {
       const response = await fetch(
-        "http://localhost/steel-tiffins/backend/insert_distributor.php",
+        "https://vibrantlivingblog.com/steel-tiffins/backend/insert_distributor.php",
+        // "http://localhost/steel-tiffins/backend/insert_distributor.php",
         {
           method: "POST",
           headers: {
