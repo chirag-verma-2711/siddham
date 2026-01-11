@@ -202,6 +202,22 @@ export function ContactSection() {
                   </p>
                 </div>
               </div>
+
+              <div>
+                {/* Map Placeholder */}
+                <div className="mt-8 rounded-lg overflow-hidden h-64 border border-border">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.1005510933323!2d72.8534418!3d19.408061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7af7fe0e11b8f%3A0x1ba4a81046dbe51e!2sDeep%20Metal%20Industries!5e0!3m2!1sen!2sin!4v1768037326071!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Siddham - Deep Metal Industries Location"
+                  ></iframe>
+                </div>
+              </div>
             </div>
 
             {/* Form */}
