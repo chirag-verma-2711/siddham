@@ -15,6 +15,13 @@ import { Handshake, TrendingUp, Package, HeadphonesIcon } from "lucide-react";
 const INSERT_DISTRIBUTOR_API = import.meta.env.VITE_INSERT_DISTRIBUTOR_API;
 
 export function DistributorSection() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  // ⛔ prevent double submit
+  if (isSubmitting) return;
+  setIsSubmitting(true);               // 🔑 START loading
+  setFormStatus({ type: "", message: "" });
+
+
   const [formData, setFormData] = useState({
     fullName: "",
     companyName: "",
@@ -35,6 +42,7 @@ export function DistributorSection() {
     type: "",
     message: "",
   });
+  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,6 +54,7 @@ export function DistributorSection() {
         type: "error",
         message: "Please verify that you are not a robot.",
       });
+      setIsSubmitting(false);
       return;
     }
 
@@ -99,6 +108,8 @@ export function DistributorSection() {
         type: "error",
         message: "Server error. Please try again later.",
       });
+    } finally {
+      setIsSubmitting(false);            // 🔑 ALWAYS STOP loading
     }
   };
 
@@ -292,7 +303,7 @@ export function DistributorSection() {
 
               {typeof window !== "undefined" && (
                 <ReCAPTCHA
-                  sitekey="6LeWSUYsAAAAAL3ITdlo7x4uxcQ3FGJQ9G30A8kk"
+                  sitekey={RECAPTCHA_SITE_KEY}
                   onChange={(token) => setCaptchaToken(token)}
                 />
               )}
@@ -302,7 +313,8 @@ export function DistributorSection() {
                 size="lg"
                 className="w-full bg-primary hover:bg-primary/90"
               >
-                Submit Distributor Enquiry
+                
+                {isSubmitting ? "Processing..." : "Submit Distributor Enquiry"}
               </Button>
 
               {/* Inline Status Message */}
