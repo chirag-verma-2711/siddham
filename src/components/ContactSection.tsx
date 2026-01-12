@@ -13,6 +13,7 @@ import {
   SelectValue,
 } from "./ui/select";
 
+const INSERT_CONTACT_API = import.meta.env.VITE_INSERT_CONTACT_API;
 export function ContactSection() {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
@@ -93,10 +94,7 @@ export function ContactSection() {
     }
 
     try {
-      const response = await fetch(
-        "https://vibrantlivingblog.com/steel-tiffins/backend/insert_contact.php",
-        // "http://localhost/steel-tiffins/backend/insert_contact.php",
-        {
+      const response = await fetch(INSERT_CONTACT_API, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -107,6 +105,19 @@ export function ContactSection() {
           }),
         }
       );
+      // const response = await fetch(
+      //   "https://vibrantlivingblog.com/steel-tiffins/backend/insert_contact.php",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       ...formData,
+      //       captchaToken: captchaToken,
+      //     }),
+      //   }
+      // );
 
       const result = await response.json();
 

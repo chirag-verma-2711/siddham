@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { Handshake, TrendingUp, Package, HeadphonesIcon } from "lucide-react";
+const INSERT_DISTRIBUTOR_API = import.meta.env.VITE_INSERT_DISTRIBUTOR_API;
 
 export function DistributorSection() {
   const [formData, setFormData] = useState({
@@ -49,10 +50,7 @@ export function DistributorSection() {
     }
 
     try {
-      const response = await fetch(
-        "https://vibrantlivingblog.com/steel-tiffins/backend/insert_distributor.php",
-        // "http://localhost/steel-tiffins/backend/insert_distributor.php",
-        {
+      const response = await fetch(INSERT_DISTRIBUTOR_API, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
