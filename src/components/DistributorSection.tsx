@@ -12,13 +12,9 @@ import {
   SelectValue,
 } from "./ui/select";
 import { Handshake, TrendingUp, Package, HeadphonesIcon } from "lucide-react";
-
 const INSERT_DISTRIBUTOR_API = import.meta.env.VITE_INSERT_DISTRIBUTOR_API;
-const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 export function DistributorSection() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
   const [formData, setFormData] = useState({
     fullName: "",
     companyName: "",
@@ -43,10 +39,6 @@ export function DistributorSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // ⛔ prevent double submit
-    if (isSubmitting) return;
-
-    setIsSubmitting(true);
     setFormStatus({ type: "", message: "" });
 
     if (!captchaToken) {
@@ -54,21 +46,21 @@ export function DistributorSection() {
         type: "error",
         message: "Please verify that you are not a robot.",
       });
-      setIsSubmitting(false);
       return;
     }
 
     try {
       const response = await fetch(INSERT_DISTRIBUTOR_API, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          captchaToken,
-        }),
-      });
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+            captchaToken: captchaToken,
+          }),
+        }
+      );
 
       const result = await response.json();
 
@@ -92,6 +84,7 @@ export function DistributorSection() {
 
         setCaptchaToken(null);
 
+        // Optional: auto-hide message after 5 sec
         setTimeout(() => {
           setFormStatus({ type: "", message: "" });
         }, 5000);
@@ -107,10 +100,31 @@ export function DistributorSection() {
         type: "error",
         message: "Server error. Please try again later.",
       });
-    } finally {
-      setIsSubmitting(false); // 🔑 ALWAYS reset
     }
   };
+
+  const benefits = [
+    {
+      icon: Handshake,
+      title: "Partnership Benefits",
+      description: "Competitive margins and exclusive territory rights",
+    },
+    {
+      icon: TrendingUp,
+      title: "Growing Market",
+      description: "Tap into the premium kitchenware segment",
+    },
+    {
+      icon: Package,
+      title: "Quality Products",
+      description: "ISI certified, premium stainless steel range",
+    },
+    {
+      icon: HeadphonesIcon,
+      title: "Support",
+      description: "Dedicated distributor support team",
+    },
+  ];
 
   return (
     <section id="distributor" className="py-20 lg:py-28 bg-slate-50">
@@ -279,7 +293,7 @@ export function DistributorSection() {
 
               {typeof window !== "undefined" && (
                 <ReCAPTCHA
-                  sitekey={RECAPTCHA_SITE_KEY}
+                  sitekey="6LeWSUYsAAAAAL3ITdlo7x4uxcQ3FGJQ9G30A8kk"
                   onChange={(token) => setCaptchaToken(token)}
                 />
               )}
@@ -289,8 +303,7 @@ export function DistributorSection() {
                 size="lg"
                 className="w-full bg-primary hover:bg-primary/90"
               >
-                
-                {isSubmitting ? "Processing..." : "Submit Distributor Enquiry"}
+                Submit Distributor Enquiry
               </Button>
 
               {/* Inline Status Message */}
