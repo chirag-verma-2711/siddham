@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { Handshake, TrendingUp, Package, HeadphonesIcon } from "lucide-react";
+
 const INSERT_DISTRIBUTOR_API = import.meta.env.VITE_INSERT_DISTRIBUTOR_API;
 
 export function DistributorSection() {
@@ -28,6 +29,8 @@ export function DistributorSection() {
 
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [formStatus, setFormStatus] = useState<{
     type: "success" | "error" | "";
     message: string;
@@ -38,6 +41,8 @@ export function DistributorSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (isSubmitting) return;
 
     setFormStatus({ type: "", message: "" });
 
@@ -50,17 +55,18 @@ export function DistributorSection() {
     }
 
     try {
+      setIsSubmitting(true);
+
       const response = await fetch(INSERT_DISTRIBUTOR_API, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...formData,
-            captchaToken: captchaToken,
-          }),
-        }
-      );
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          captchaToken: captchaToken,
+        }),
+      });
 
       const result = await response.json();
 
@@ -84,7 +90,6 @@ export function DistributorSection() {
 
         setCaptchaToken(null);
 
-        // Optional: auto-hide message after 5 sec
         setTimeout(() => {
           setFormStatus({ type: "", message: "" });
         }, 5000);
@@ -100,6 +105,8 @@ export function DistributorSection() {
         type: "error",
         message: "Server error. Please try again later.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -175,10 +182,7 @@ export function DistributorSection() {
                     required
                     value={formData.fullName}
                     onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        fullName: e.target.value,
-                      })
+                      setFormData({ ...formData, fullName: e.target.value })
                     }
                   />
                 </div>
@@ -189,10 +193,7 @@ export function DistributorSection() {
                     required
                     value={formData.companyName}
                     onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        companyName: e.target.value,
-                      })
+                      setFormData({ ...formData, companyName: e.target.value })
                     }
                   />
                 </div>
@@ -203,10 +204,7 @@ export function DistributorSection() {
                     required
                     value={formData.mobile}
                     onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        mobile: e.target.value,
-                      })
+                      setFormData({ ...formData, mobile: e.target.value })
                     }
                   />
                 </div>
@@ -218,10 +216,7 @@ export function DistributorSection() {
                     required
                     value={formData.email}
                     onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        email: e.target.value,
-                      })
+                      setFormData({ ...formData, email: e.target.value })
                     }
                   />
                 </div>
@@ -232,10 +227,7 @@ export function DistributorSection() {
                     required
                     value={formData.city}
                     onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        city: e.target.value,
-                      })
+                      setFormData({ ...formData, city: e.target.value })
                     }
                   />
                 </div>
@@ -246,10 +238,7 @@ export function DistributorSection() {
                     required
                     value={formData.state}
                     onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        state: e.target.value,
-                      })
+                      setFormData({ ...formData, state: e.target.value })
                     }
                   />
                 </div>
@@ -282,10 +271,7 @@ export function DistributorSection() {
                   rows={4}
                   value={formData.message}
                   onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      message: e.target.value,
-                    })
+                    setFormData({ ...formData, message: e.target.value })
                   }
                   placeholder="Tell us about your business..."
                 />
@@ -301,12 +287,12 @@ export function DistributorSection() {
               <Button
                 type="submit"
                 size="lg"
+                disabled={isSubmitting}
                 className="w-full bg-primary hover:bg-primary/90"
               >
-                Submit Distributor Enquiry
+                {isSubmitting ? "Processing..." : "Submit Distributor Enquiry"}
               </Button>
 
-              {/* Inline Status Message */}
               {formStatus.message && (
                 <div
                   className={`mt-4 text-xl text-center transition-all duration-300 ${
