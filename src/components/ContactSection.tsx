@@ -14,8 +14,10 @@ import {
 } from "./ui/select";
 
 const INSERT_CONTACT_API = import.meta.env.VITE_INSERT_CONTACT_API;
+
 export function ContactSection() {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -75,6 +77,9 @@ export function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (isSubmitting) return;
+
     setFormStatus({ type: "", message: "" });
 
     if (!formData.state) {
@@ -94,6 +99,8 @@ export function ContactSection() {
     }
 
     try {
+      setIsSubmitting(true);
+
       const response = await fetch(INSERT_CONTACT_API, {
         method: "POST",
         headers: {
@@ -104,19 +111,6 @@ export function ContactSection() {
           captchaToken: captchaToken,
         }),
       });
-      // const response = await fetch(
-      //   "https://vibrantlivingblog.com/steel-tiffins/backend/insert_contact.php",
-      //   {
-      //     method: "POST",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //     body: JSON.stringify({
-      //       ...formData,
-      //       captchaToken: captchaToken,
-      //     }),
-      //   }
-      // );
 
       const result = await response.json();
 
@@ -138,7 +132,6 @@ export function ContactSection() {
 
         setCaptchaToken(null);
 
-        // Optional auto-hide
         setTimeout(() => {
           setFormStatus({ type: "", message: "" });
         }, 5000);
@@ -154,6 +147,8 @@ export function ContactSection() {
         type: "error",
         message: "Server error. Please try again later.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -213,20 +208,17 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div>
-                {/* Map Placeholder */}
-                <div className="mt-8 rounded-lg overflow-hidden h-64 border border-border">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.1005510933323!2d72.8534418!3d19.408061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7af7fe0e11b8f%3A0x1ba4a81046dbe51e!2sDeep%20Metal%20Industries!5e0!3m2!1sen!2sin!4v1768037326071!5m2!1sen!2sin"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Siddham - Deep Metal Industries Location"
-                  ></iframe>
-                </div>
+              <div className="mt-8 rounded-lg overflow-hidden h-64 border border-border">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.1005510933323!2d72.8534418!3d19.408061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7af7fe0e11b8f%3A0x1ba4a81046dbe51e!2sDeep%20Metal%20Industries!5e0!3m2!1sen!2sin!4v1768037326071!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Deep Metal Industries Location"
+                ></iframe>
               </div>
             </div>
 
@@ -332,13 +324,19 @@ export function ContactSection() {
                   <Button
                     type="submit"
                     size="lg"
+                    disabled={isSubmitting}
                     className="w-full bg-primary hover:bg-primary/90"
                   >
-                    <Send className="w-4 h-4 mr-2" />
-                    Send Message
+                    {isSubmitting ? (
+                      "Processing..."
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4 mr-2" />
+                        Send Message
+                      </>
+                    )}
                   </Button>
 
-                  {/* Inline success / error message */}
                   {formStatus.message && (
                     <div
                       style={{
