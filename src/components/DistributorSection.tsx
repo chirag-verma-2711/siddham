@@ -12,15 +12,12 @@ import {
   SelectValue,
 } from "./ui/select";
 import { Handshake, TrendingUp, Package, HeadphonesIcon } from "lucide-react";
+
 const INSERT_DISTRIBUTOR_API = import.meta.env.VITE_INSERT_DISTRIBUTOR_API;
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 export function DistributorSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  // ⛔ prevent double submit
-  if (isSubmitting) return;
-  setIsSubmitting(true);               // 🔑 START loading
-  setFormStatus({ type: "", message: "" });
-
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -42,11 +39,14 @@ export function DistributorSection() {
     type: "",
     message: "",
   });
-  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // ⛔ prevent double submit
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
     setFormStatus({ type: "", message: "" });
 
     if (!captchaToken) {
@@ -66,7 +66,7 @@ export function DistributorSection() {
         },
         body: JSON.stringify({
           ...formData,
-          captchaToken: captchaToken,
+          captchaToken,
         }),
       });
 
@@ -92,7 +92,6 @@ export function DistributorSection() {
 
         setCaptchaToken(null);
 
-        // Optional: auto-hide message after 5 sec
         setTimeout(() => {
           setFormStatus({ type: "", message: "" });
         }, 5000);
@@ -109,32 +108,9 @@ export function DistributorSection() {
         message: "Server error. Please try again later.",
       });
     } finally {
-      setIsSubmitting(false);            // 🔑 ALWAYS STOP loading
+      setIsSubmitting(false); // 🔑 ALWAYS reset
     }
   };
-
-  const benefits = [
-    {
-      icon: Handshake,
-      title: "Partnership Benefits",
-      description: "Competitive margins and exclusive territory rights",
-    },
-    {
-      icon: TrendingUp,
-      title: "Growing Market",
-      description: "Tap into the premium kitchenware segment",
-    },
-    {
-      icon: Package,
-      title: "Quality Products",
-      description: "ISI certified, premium stainless steel range",
-    },
-    {
-      icon: HeadphonesIcon,
-      title: "Support",
-      description: "Dedicated distributor support team",
-    },
-  ];
 
   return (
     <section id="distributor" className="py-20 lg:py-28 bg-slate-50">
