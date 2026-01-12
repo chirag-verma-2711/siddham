@@ -12,12 +12,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
-const INSERT_CONTACT_API = import.meta.env.VITE_INSERT_CONTACT_API;
 
+const INSERT_CONTACT_API = import.meta.env.VITE_INSERT_CONTACT_API;
 export function ContactSection() {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -77,20 +75,13 @@ export function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    // ⛔ prevent double submit
-    if (isSubmitting) return;
-
-    setIsSubmitting(true);               // 🔑 START loading
     setFormStatus({ type: "", message: "" });
 
-    // ---------- FRONTEND VALIDATION ----------
     if (!formData.state) {
       setFormStatus({
         type: "error",
         message: "Please select a state.",
       });
-      setIsSubmitting(false);
       return;
     }
 
@@ -99,21 +90,34 @@ export function ContactSection() {
         type: "error",
         message: "Please verify that you are not a robot.",
       });
-      setIsSubmitting(false);
       return;
     }
 
     try {
       const response = await fetch(INSERT_CONTACT_API, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          captchaToken: captchaToken,
-        }),
-      });
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+            captchaToken: captchaToken,
+          }),
+        }
+      );
+      // const response = await fetch(
+      //   "https://vibrantlivingblog.com/steel-tiffins/backend/insert_contact.php",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       ...formData,
+      //       captchaToken: captchaToken,
+      //     }),
+      //   }
+      // );
 
       const result = await response.json();
 
@@ -124,7 +128,6 @@ export function ContactSection() {
             "Thank you for reaching out! We will get back to you shortly.",
         });
 
-        // reset form
         setFormData({
           name: "",
           email: "",
@@ -136,30 +139,24 @@ export function ContactSection() {
 
         setCaptchaToken(null);
 
-        // auto-hide success message
+        // Optional auto-hide
         setTimeout(() => {
           setFormStatus({ type: "", message: "" });
         }, 5000);
-
       } else {
         setFormStatus({
           type: "error",
           message: result.message || "Something went wrong. Please try again.",
         });
       }
-
     } catch (error) {
       console.error("API Error:", error);
       setFormStatus({
         type: "error",
         message: "Server error. Please try again later.",
       });
-
-    } finally {
-      setIsSubmitting(false);            // 🔑 ALWAYS STOP loading
     }
   };
-
 
   return (
     <section className="py-20 lg:py-28 bg-white">
@@ -328,27 +325,18 @@ export function ContactSection() {
 
                   {typeof window !== "undefined" && (
                     <ReCAPTCHA
-                      sitekey={RECAPTCHA_SITE_KEY}
+                      sitekey="6LeWSUYsAAAAAL3ITdlo7x4uxcQ3FGJQ9G30A8kk"
                       onChange={(token) => setCaptchaToken(token)}
                     />
                   )}
 
-                  {/* <Button
+                  <Button
                     type="submit"
                     size="lg"
                     className="w-full bg-primary hover:bg-primary/90"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
-                  </Button> */}
-
-                  <Button
-                    type="submit"
-                    size="lg"
-                    disabled={isSubmitting}
-                    className="w-full bg-primary hover:bg-primary/90 disabled:opacity-70"
-                  >
-                    {isSubmitting ? "Processing..." : "Send Message"}
                   </Button>
 
                   {/* Inline success / error message */}
