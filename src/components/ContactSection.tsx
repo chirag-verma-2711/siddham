@@ -14,6 +14,7 @@ import {
 } from "./ui/select";
 
 const INSERT_CONTACT_API = import.meta.env.VITE_INSERT_CONTACT_API;
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 export function ContactSection() {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
@@ -316,7 +317,7 @@ export function ContactSection() {
 
                   {typeof window !== "undefined" && (
                     <ReCAPTCHA
-                      sitekey="6LeWSUYsAAAAAL3ITdlo7x4uxcQ3FGJQ9G30A8kk"
+                      sitekey={RECAPTCHA_SITE_KEY}
                       onChange={(token) => setCaptchaToken(token)}
                     />
                   )}

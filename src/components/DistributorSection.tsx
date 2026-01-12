@@ -14,6 +14,7 @@ import {
 import { Handshake, TrendingUp, Package, HeadphonesIcon } from "lucide-react";
 
 const INSERT_DISTRIBUTOR_API = import.meta.env.VITE_INSERT_DISTRIBUTOR_API;
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 export function DistributorSection() {
   const [formData, setFormData] = useState({
@@ -279,7 +280,7 @@ export function DistributorSection() {
 
               {typeof window !== "undefined" && (
                 <ReCAPTCHA
-                  sitekey="6LeWSUYsAAAAAL3ITdlo7x4uxcQ3FGJQ9G30A8kk"
+                  sitekey={RECAPTCHA_SITE_KEY}
                   onChange={(token) => setCaptchaToken(token)}
                 />
               )}
