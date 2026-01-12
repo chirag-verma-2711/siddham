@@ -15,6 +15,7 @@ import { Handshake, TrendingUp, Package, HeadphonesIcon } from "lucide-react";
 const INSERT_DISTRIBUTOR_API = import.meta.env.VITE_INSERT_DISTRIBUTOR_API;
 
 export function DistributorSection() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     companyName: "",
@@ -39,28 +40,33 @@ export function DistributorSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // ⛔ prevent double submit
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);               // 🔑 START loading
     setFormStatus({ type: "", message: "" });
 
+    // ---------- CAPTCHA CHECK ----------
     if (!captchaToken) {
       setFormStatus({
         type: "error",
         message: "Please verify that you are not a robot.",
       });
+      setIsSubmitting(false);
       return;
     }
 
     try {
       const response = await fetch(INSERT_DISTRIBUTOR_API, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...formData,
-            captchaToken: captchaToken,
-          }),
-        }
-      );
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          captchaToken: captchaToken,
+        }),
+      });
 
       const result = await response.json();
 
@@ -71,6 +77,7 @@ export function DistributorSection() {
             "Thank you! Your distributor enquiry has been submitted successfully.",
         });
 
+        // reset form
         setFormData({
           fullName: "",
           companyName: "",
@@ -84,24 +91,30 @@ export function DistributorSection() {
 
         setCaptchaToken(null);
 
-        // Optional: auto-hide message after 5 sec
+        // auto-hide success message
         setTimeout(() => {
           setFormStatus({ type: "", message: "" });
         }, 5000);
+
       } else {
         setFormStatus({
           type: "error",
           message: result.message || "Something went wrong. Please try again.",
         });
       }
+
     } catch (error) {
       console.error("API Error:", error);
       setFormStatus({
         type: "error",
         message: "Server error. Please try again later.",
       });
+
+    } finally {
+      setIsSubmitting(false);            // 🔑 ALWAYS STOP loading
     }
   };
+
 
   const benefits = [
     {
@@ -303,7 +316,7 @@ export function DistributorSection() {
                 size="lg"
                 className="w-full bg-primary hover:bg-primary/90"
               >
-                Submit Distributor Enquiry
+                {isSubmitting ? "Processing..." : "Submit Distributor Enquiry"}
               </Button>
 
               {/* Inline Status Message */}
