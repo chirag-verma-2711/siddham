@@ -51,18 +51,28 @@ export function DistributorSection() {
 
     try {
       const response = await fetch(INSERT_DISTRIBUTOR_API, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...formData,
-            captchaToken: captchaToken,
-          }),
-        }
-      );
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          captchaToken: captchaToken,
+        }),
+      });
 
-      const result = await response.json();
+      // const result = await response.json();
+      let result: any;
+
+      const contentType = response.headers.get("content-type");
+
+      if (contentType && contentType.includes("application/json")) {
+        result = await response.json();
+      } else {
+        const text = await response.text();
+        console.error("Non-JSON response from server:", text);
+        throw new Error("Server returned invalid response");
+      }
 
       if (result.success) {
         setFormStatus({
@@ -94,13 +104,22 @@ export function DistributorSection() {
           message: result.message || "Something went wrong. Please try again.",
         });
       }
-    } catch (error) {
-      console.error("API Error:", error);
+    } catch (error: any) {
+      console.error("API Error full object:", error);
+      console.error("API Error message:", error?.message);
+
       setFormStatus({
         type: "error",
-        message: "Server error. Please try again later.",
+        message: error?.message || "Network / CORS / Server error",
       });
     }
+    // catch (error) {
+    //   console.error("API Error:", error);
+    //   setFormStatus({
+    //     type: "error",
+    //     message: "Server error. Please try again later.",
+    //   });
+    // }
   };
 
   const benefits = [

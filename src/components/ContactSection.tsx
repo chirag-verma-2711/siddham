@@ -95,16 +95,15 @@ export function ContactSection() {
 
     try {
       const response = await fetch(INSERT_CONTACT_API, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...formData,
-            captchaToken: captchaToken,
-          }),
-        }
-      );
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          captchaToken: captchaToken,
+        }),
+      });
       // const response = await fetch(
       //   "https://vibrantlivingblog.com/steel-tiffins/backend/insert_contact.php",
       //   {
@@ -149,13 +148,22 @@ export function ContactSection() {
           message: result.message || "Something went wrong. Please try again.",
         });
       }
-    } catch (error) {
-      console.error("API Error:", error);
+    } catch (error: any) {
+      console.error("API Error full object:", error);
+      console.error("API Error message:", error?.message);
+
       setFormStatus({
         type: "error",
-        message: "Server error. Please try again later.",
+        message: error?.message || "Network / CORS / Server error",
       });
     }
+    // catch (error) {
+    //   console.error("API Error:", error);
+    //   setFormStatus({
+    //     type: "error",
+    //     message: "Server error. Please try again later.",
+    //   });
+    // }
   };
 
   return (
