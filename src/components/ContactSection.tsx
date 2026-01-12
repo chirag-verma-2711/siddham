@@ -148,22 +148,13 @@ export function ContactSection() {
           message: result.message || "Something went wrong. Please try again.",
         });
       }
-    } catch (error: any) {
-      console.error("API Error full object:", error);
-      console.error("API Error message:", error?.message);
-
+    } catch (error) {
+      console.error("API Error:", error);
       setFormStatus({
         type: "error",
-        message: error?.message || "Network / CORS / Server error",
+        message: "Server error. Please try again later.",
       });
     }
-    // catch (error) {
-    //   console.error("API Error:", error);
-    //   setFormStatus({
-    //     type: "error",
-    //     message: "Server error. Please try again later.",
-    //   });
-    // }
   };
 
   return (

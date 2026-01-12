@@ -61,18 +61,7 @@ export function DistributorSection() {
         }),
       });
 
-      // const result = await response.json();
-      let result: any;
-
-      const contentType = response.headers.get("content-type");
-
-      if (contentType && contentType.includes("application/json")) {
-        result = await response.json();
-      } else {
-        const text = await response.text();
-        console.error("Non-JSON response from server:", text);
-        throw new Error("Server returned invalid response");
-      }
+      const result = await response.json();
 
       if (result.success) {
         setFormStatus({
@@ -104,22 +93,13 @@ export function DistributorSection() {
           message: result.message || "Something went wrong. Please try again.",
         });
       }
-    } catch (error: any) {
-      console.error("API Error full object:", error);
-      console.error("API Error message:", error?.message);
-
+    } catch (error) {
+      console.error("API Error:", error);
       setFormStatus({
         type: "error",
-        message: error?.message || "Network / CORS / Server error",
+        message: "Server error. Please try again later.",
       });
     }
-    // catch (error) {
-    //   console.error("API Error:", error);
-    //   setFormStatus({
-    //     type: "error",
-    //     message: "Server error. Please try again later.",
-    //   });
-    // }
   };
 
   const benefits = [
