@@ -1,6 +1,7 @@
 import { Button } from './ui/button';
+// import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9-CsluWBe2.webp';
 import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.png';
-import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
+// import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
 
 export function HeroSection() {
   const scrollToSection = (id: string) => {
@@ -26,7 +27,7 @@ export function HeroSection() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Gradient Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-900/50 to-slate-900/30"></div>
         
         {/* Content */}
         <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center">

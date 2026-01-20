@@ -64,7 +64,7 @@ export function AboutSection() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Quality Manufacturing</span>
+                  <span className="text-foreground">High Quality Manufacturing</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
