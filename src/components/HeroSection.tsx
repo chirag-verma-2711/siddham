@@ -27,7 +27,7 @@ export function HeroSection() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Gradient Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-900/50 to-slate-900/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/50"></div>
         
         {/* Content */}
         <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center">
