@@ -28,7 +28,7 @@ export function HeroSection() {
         />
         {/* Gradient Overlay for text readability */}
         <div className="absolute inset-0" style={{
-          background: "linear-gradient(45deg, #00000014, transparent)"
+          background: "linear-gradient(90deg, rgb(0 0 0 / 20%), transparent)"
         }}></div>
 
         {/* Content */}
