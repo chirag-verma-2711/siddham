@@ -3,6 +3,10 @@ import { Button } from './ui/button';
 import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp';
 // import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
 
+import isiLogo from '../assets/isi_logo.png';
+import bisLogo from '../assets/bis_logo.png';
+
+
 export function HeroSection() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -21,7 +25,7 @@ export function HeroSection() {
     <section id="home" className="relative pt-20 bg-gradient-to-b from-slate-900 to-slate-800">
       {/* Hero Banner Image with Overlay */}
       <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
-        <img 
+        <img
           src={heroBannerImg}
           alt="Siddham Premium Stainless Steel Products"
           className="absolute inset-0 w-full h-full object-cover"
@@ -51,14 +55,14 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
+              <Button
                 size="lg"
                 onClick={() => scrollToSection('products')}
                 className="bg-primary hover:bg-primary/90 px-8 py-6 text-lg"
               >
                 View Products
               </Button>
-              <Button 
+              <Button
                 size="lg"
                 onClick={() => scrollToSection('distributor')}
                 className="bg-slate-700 hover:bg-slate-600 text-white px-8 py-6 text-lg"
@@ -66,6 +70,13 @@ export function HeroSection() {
                 Become a Distributor
               </Button>
             </div>
+
+            {/* Quality Certification Logos */}
+            <div className="flex items-center gap-6 mt-8 opacity-80">
+              <img src={isiLogo} alt="ISI Certification" className="h-12 w-auto object-contain" />
+              <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
+            </div>
+
           </div>
         </div>
       </div>
