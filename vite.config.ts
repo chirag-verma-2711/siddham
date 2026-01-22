@@ -24,8 +24,8 @@ export default defineConfig({
       // ✅ KEEP ALL FIGMA ASSETS
       'figma:asset/fc105f95e8e33c113708e478efd14f226115501e.png': path.resolve(__dirname, './src/assets/fc105f95e8e33c113708e478efd14f226115501e.png'),
       'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.png': path.resolve(__dirname, './src/assets/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.png'),
-      'figma:asset/cf505a064aa624039c59123c40a49519541dc328.png': path.resolve(__dirname, './src/assets/cf505a064aa624039c59123c40a49519541dc328.png'),
-      'figma:asset/b6299995f06f312332775ca0015dc2c2feeb3380.png': path.resolve(__dirname, './src/assets/b6299995f06f312332775ca0015dc2c2feeb3380.png'),
+      'figma:asset/6MasalaBowls_silver.webp': path.resolve(__dirname, './src/assets/6MasalaBowls_silver.webp'),
+      'figma:asset/PoojaSilverBox.webp': path.resolve(__dirname, './src/assets/PoojaSilverBox.webp'),
       'figma:asset/9addbddb2954fb069acf287e8265005d4f3557ce.png': path.resolve(__dirname, './src/assets/9addbddb2954fb069acf287e8265005d4f3557ce.png'),
       'figma:asset/9940d9157251b62be37c770d8620ca1f0d850ad1.png': path.resolve(__dirname, './src/assets/9940d9157251b62be37c770d8620ca1f0d850ad1.png'),
       'figma:asset/97ccf64244679b25415f338d4bdde58cb18e000b.png': path.resolve(__dirname, './src/assets/97ccf64244679b25415f338d4bdde58cb18e000b.png'),
@@ -37,7 +37,7 @@ export default defineConfig({
       'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.png': path.resolve(__dirname, './src/assets/43ca7df0df32d72680a9aa14e61ddbf303836314.png'),
       'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.png': path.resolve(__dirname, './src/assets/3b18af72beb1d361403d456a15c314b6ac1fa9a9.png'),
       'figma:asset/1ee64264d81ccf0c2b3f71fd438da13cd409d985.png': path.resolve(__dirname, './src/assets/1ee64264d81ccf0c2b3f71fd438da13cd409d985.png'),
-      'figma:asset/image.png': path.resolve(__dirname, './src/assets/image.png'),
+      'figma:asset/nineMasalaBowls.webp': path.resolve(__dirname, './src/assets/nineMasalaBowls.webp'),
 
       '@': path.resolve(__dirname, './src'),
     },

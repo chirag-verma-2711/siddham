@@ -1,16 +1,17 @@
 import { CheckCircle2 } from 'lucide-react';
-import masalaDabbaImg from 'figma:asset/cf505a064aa624039c59123c40a49519541dc328.png';
+import masalaDabbaImg from 'figma:asset/6MasalaBowls_silver.webp';
 import dryFruitDabbaImg from 'figma:asset/9addbddb2954fb069acf287e8265005d4f3557ce.png';
 import squareCanisterImg from 'figma:asset/94039e0715ada18c250d12be5241df6434324f58.png';
 import roundTiffinImg from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.png';
 import squareTiffinImg from 'figma:asset/97ccf64244679b25415f338d4bdde58cb18e000b.png';
-import poojaSilverBoxImg from 'figma:asset/b6299995f06f312332775ca0015dc2c2feeb3380.png';
+import poojaSilverBoxImg from 'figma:asset/PoojaSilverBox.webp';
 import tiffinKingDuoImg from 'figma:asset/fc105f95e8e33c113708e478efd14f226115501e.png';
 import tiffinKingTrioImg from 'figma:asset/72fd3216672b3f71fb1ba3533a68e60262886a6b.png';
 import swaad3DMasalaDabbaImg from 'figma:asset/533557484b5de1a2757a6da45041ce1ef8dea154.png';
 import celebration3DDryFruitImg from 'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.png';
 import premiumMasalaDabbaImg from 'figma:asset/1ee64264d81ccf0c2b3f71fd438da13cd409d985.png';
 import sindoorMasalaDabba9BowlImg from 'figma:asset/9940d9157251b62be37c770d8620ca1f0d850ad1.png';
+import nineMasalaBowls from 'figma:asset/nineMasalaBowls.webp';
 
 export function ProductsSection() {
   const products = [
@@ -29,6 +30,18 @@ export function ProductsSection() {
     {
       name: 'Sindoor Masala Dabba',
       image: sindoorMasalaDabba9BowlImg,
+      details: '9 Masala Bowls & 1 Masala Spoon',
+      size: '23.0×23.0×6.5 cm / 1900 ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Mirror Finish - Lustrous Appearance',
+        'Multi Purpose Dabba',
+        '100% Odourless & Hygienic'
+      ]
+    },
+    {
+      name: 'Sindoor Masala Dabba',
+      image: nineMasalaBowls,
       details: '9 Masala Bowls & 1 Masala Spoon',
       size: '23.0×23.0×6.5 cm / 1900 ml',
       highlights: [
