@@ -23,7 +23,7 @@ export default defineConfig({
 
       // ✅ KEEP ALL FIGMA ASSETS
       'figma:asset/twoTierLunch.jpg': path.resolve(__dirname, './src/assets/twoTierLunch.jpg'),
-      'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.png': path.resolve(__dirname, './src/assets/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.png'),
+      'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg': path.resolve(__dirname, './src/assets/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg'),
       'figma:asset/6MasalaBowls_silver.webp': path.resolve(__dirname, './src/assets/6MasalaBowls_silver.webp'),
       'figma:asset/PoojaSilverBox.webp': path.resolve(__dirname, './src/assets/PoojaSilverBox.webp'),
       'figma:asset/SindoorDryFruit_glass.jpg': path.resolve(__dirname, './src/assets/SindoorDryFruit_glass.jpg'),

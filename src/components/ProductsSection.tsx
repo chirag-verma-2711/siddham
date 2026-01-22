@@ -3,7 +3,7 @@ import masalaDabbaImg from 'figma:asset/6MasalaBowls_silver.webp';
 import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.jpg';
 import dryFruitDabbaImgsilver from 'figma:asset/SindoorDryFruit_silver.jpg';
 import squareCanisterImg from 'figma:asset/SquareCanisterSet.jpg';
-import roundTiffinImg from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.png';
+import roundTiffinImg from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
 import squareTiffinImg from 'figma:asset/SquareTiffin.jpg';
 import poojaSilverBoxImg from 'figma:asset/PoojaSilverBox.webp';
 import tiffinKingDuoImg from 'figma:asset/twoTierLunch.jpg';
