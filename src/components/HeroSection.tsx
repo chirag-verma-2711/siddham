@@ -72,7 +72,16 @@ export function HeroSection() {
             </div>
 
             {/* Quality Certification Logos */}
-            <div className="flex items-center gap-6 mt-8 opacity-80 bg-white/75 w-fit px-5 py-[5px] rounded-md">
+            <div
+              className="flex items-center gap-6 mt-8 opacity-80 bg-white/75 w-fit px-5 py-[5px] rounded-md"
+              style={{
+                background: '#ffffffbf',
+                width: 'fit-content',
+                padding: '5px 20px',
+                borderRadius: '5px'
+              }}
+            >
+
               <img src={isiLogo} alt="ISI Certification" className="h-12 w-auto object-contain" />
               <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
             </div>
