@@ -70,12 +70,12 @@ export function HeroSection() {
             {/* Certification Logos */}
             <div className="mt-10 flex items-center gap-8">
               <img
-                src="/assets/isi-logo.png"
+                src="/isi-logo.png"
                 alt="ISI Certified"
                 className="h-12 w-auto bg-white p-2 rounded"
               />
               <img
-                src="/assets/bis-logo.png"
+                src="/bis-logo.png"
                 alt="Bureau of Indian Standards"
                 className="h-12 w-auto bg-white p-2 rounded"
               />
