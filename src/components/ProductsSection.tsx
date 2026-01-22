@@ -79,7 +79,7 @@ export function ProductsSection() {
       ]
     },
     {
-      name: 'Premium Masala Dabba',
+      name: 'Sindoor masala dabba 4 vati',
       image: premiumMasalaDabbaImg,
       details: '4 Compartment Spice Container with Lid',
       size: '20.0×20.0×6.5 cm / 1500 ml',
@@ -91,7 +91,7 @@ export function ProductsSection() {
       ]
     },
     {
-      name: 'Premium Masala Dabba',
+      name: 'Sindoor masala dabba 4 vati',
       image: premiumMasalaDabbaImgsilver,
       details: '4 Compartment Spice Container with Lid',
       size: '20.0×20.0×6.5 cm / 1500 ml',
