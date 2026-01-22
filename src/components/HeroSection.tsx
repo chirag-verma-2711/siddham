@@ -81,7 +81,6 @@ export function HeroSection() {
                 borderRadius: '5px'
               }}
             >
-
               <img src={isiLogo} alt="ISI Certification" className="h-12 w-auto object-contain" />
               <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
             </div>
