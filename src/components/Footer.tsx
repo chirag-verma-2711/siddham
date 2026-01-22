@@ -21,11 +21,11 @@ export function Footer() {
       <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand Column */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 ">
             <img 
               src={siddhamLogo}
               alt="Siddham Logo" 
-              className="h-24 w-auto mb-6"
+              className="h-[150px] w-auto mb-6"
             />
             <p className="text-slate-400 mb-4 max-w-md">
               Exclusive quality home products with professional stainless steel construction.
