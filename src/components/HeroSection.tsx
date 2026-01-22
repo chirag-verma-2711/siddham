@@ -70,19 +70,16 @@ export function HeroSection() {
                 Become a Distributor
               </Button>
             </div>
+
+            {/* Quality Certification Logos */}
+            <div className="flex items-center gap-6 mt-8 opacity-80">
+              <img src={isiLogo} alt="ISI Certification" className="h-12 w-auto object-contain" />
+              <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
+            </div>
+
           </div>
         </div>
-
-
-
       </div>
-
-      {/* Quality Certification Logos */}
-      <div className="flex items-center gap-6 mt-8 opacity-80">
-        <img src={isiLogo} alt="ISI Certification" className="h-12 w-auto object-contain" />
-        <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
-      </div>
-
 
       {/* Decorative element */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
