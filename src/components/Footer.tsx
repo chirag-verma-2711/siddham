@@ -1,4 +1,4 @@
-import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
+import siddhamLogo from 'figma:asset/icon_fotter.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
