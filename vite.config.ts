@@ -36,8 +36,10 @@ export default defineConfig({
       'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png': path.resolve(__dirname, './src/assets/46f7468268dc4910cc1671a5d6957250ae4f881b.png'),
       'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.png': path.resolve(__dirname, './src/assets/43ca7df0df32d72680a9aa14e61ddbf303836314.png'),
       'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.png': path.resolve(__dirname, './src/assets/3b18af72beb1d361403d456a15c314b6ac1fa9a9.png'),
-      'figma:asset/1ee64264d81ccf0c2b3f71fd438da13cd409d985.png': path.resolve(__dirname, './src/assets/1ee64264d81ccf0c2b3f71fd438da13cd409d985.png'),
+      'figma:asset/fourCompartment_glass.jpg': path.resolve(__dirname, './src/assets/fourCompartment_glass.jpg'),
+      'figma:asset/fourCompartment_silver.jpg': path.resolve(__dirname, './src/assets/fourCompartment_silver.jpg'),
       'figma:asset/nineMasalaBowls.webp': path.resolve(__dirname, './src/assets/nineMasalaBowls.webp'),
+      'figma:asset/sixMasalaBowls.jpg': path.resolve(__dirname, './src/assets/sixMasalaBowls.jpg'),
 
       '@': path.resolve(__dirname, './src'),
     },

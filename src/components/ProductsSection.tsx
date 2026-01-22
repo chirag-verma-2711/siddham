@@ -9,15 +9,29 @@ import tiffinKingDuoImg from 'figma:asset/fc105f95e8e33c113708e478efd14f22611550
 import tiffinKingTrioImg from 'figma:asset/72fd3216672b3f71fb1ba3533a68e60262886a6b.png';
 import swaad3DMasalaDabbaImg from 'figma:asset/533557484b5de1a2757a6da45041ce1ef8dea154.png';
 import celebration3DDryFruitImg from 'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.png';
-import premiumMasalaDabbaImg from 'figma:asset/1ee64264d81ccf0c2b3f71fd438da13cd409d985.png';
+import premiumMasalaDabbaImg from 'figma:asset/fourCompartment_glass.jpg';
+import premiumMasalaDabbaImgsilver from 'figma:asset/fourCompartment_silver.jpg';
 import sindoorMasalaDabba9BowlImg from 'figma:asset/9940d9157251b62be37c770d8620ca1f0d850ad1.png';
 import nineMasalaBowls from 'figma:asset/nineMasalaBowls.webp';
+import sixMasalaBowls from 'figma:asset/sixMasalaBowls.jpg';
 
 export function ProductsSection() {
   const products = [
     {
       name: 'Sindoor Masala Dabba',
       image: masalaDabbaImg,
+      details: '6 Masala Bowls & 1 Masala Spoon',
+      size: '23.3×15.7×6 cm / 1250 ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Mirror Finish - Lustrous Appearance',
+        'Multi Purpose Dabba',
+        '100% Odourless & Hygienic'
+      ]
+    },
+    {
+      name: 'Sindoor Masala Dabba',
+      image: sixMasalaBowls,
       details: '6 Masala Bowls & 1 Masala Spoon',
       size: '23.3×15.7×6 cm / 1250 ml',
       highlights: [
@@ -66,6 +80,18 @@ export function ProductsSection() {
     {
       name: 'Premium Masala Dabba',
       image: premiumMasalaDabbaImg,
+      details: '4 Compartment Spice Container with Lid',
+      size: '20.0×20.0×6.5 cm / 1500 ml',
+      highlights: [
+        'Premium Mirror Finish Stainless Steel',
+        'Airtight Transparent Lid',
+        '4 Deep Compartments',
+        'Elegant Modern Design'
+      ]
+    },
+    {
+      name: 'Premium Masala Dabba',
+      image: premiumMasalaDabbaImgsilver,
       details: '4 Compartment Spice Container with Lid',
       size: '20.0×20.0×6.5 cm / 1500 ml',
       highlights: [
