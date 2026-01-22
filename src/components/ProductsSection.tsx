@@ -233,7 +233,7 @@ export function ProductsSection() {
                 className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border group"
               >
                 {/* Product Image */}
-                <div className="relative overflow-hidden bg-white aspect-[3/4]">
+                <div className="relative overflow-hidden bg-white">
                   <img 
                     src={product.image}
                     alt={product.name}
