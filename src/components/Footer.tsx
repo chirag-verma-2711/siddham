@@ -25,7 +25,7 @@ export function Footer() {
             <img 
               src={siddhamLogo}
               alt="Siddham Logo" 
-              className="h-[150px] w-auto mb-6"
+              className="h-24 w-auto mb-6"
             />
             <p className="text-slate-400 mb-4 max-w-md">
               Exclusive quality home products with professional stainless steel construction.
