@@ -1,9 +1,6 @@
 import { Button } from './ui/button';
 // import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9-CsluWBe2.webp';
 import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp';
-
-import issBannerImg from 'figma:asset/isi-logo.png';
-import bisBannerImg from 'figma:asset/bis-logo.png';
 // import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
 
 export function HeroSection() {
@@ -73,12 +70,12 @@ export function HeroSection() {
             {/* Certification Logos */}
             <div className="mt-10 flex items-center gap-8">
               <img
-                src="{issBannerImg}"
+                src="{heroBannerImg}"
                 alt="ISI Certified"
                 className="h-12 w-auto bg-white p-2 rounded"
               />
               <img
-                src="{bisBannerImg}"
+                src="{heroBannerImg}"
                 alt="Bureau of Indian Standards"
                 className="h-12 w-auto bg-white p-2 rounded"
               />
