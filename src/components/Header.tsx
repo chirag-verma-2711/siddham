@@ -30,54 +30,55 @@ export function Header() {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
-        }`}
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
+      }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 cursor-pointer pb-[10px]" onClick={() => scrollToSection('home')}>
-            <img
+          <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('home')}>
+            <img 
               src={siddhamLogo}
-              alt="Siddham Logo"
-              className="h-24 w-auto"
+              alt="Siddham Logo" 
+              className="h-[150px] w-auto"
             />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <button
+            <button 
               onClick={() => scrollToSection('home')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Home
             </button>
-            <button
+            <button 
               onClick={() => scrollToSection('about')}
               className="text-foreground hover:text-primary transition-colors"
             >
               About Us
             </button>
-            <button
+            <button 
               onClick={() => scrollToSection('products')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Products
             </button>
-            <button
+            <button 
               onClick={() => scrollToSection('certifications')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Certifications
             </button>
-            <button
+            <button 
               onClick={() => scrollToSection('distributor')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Contact Us
             </button>
-            <Button
+            <Button 
               onClick={() => scrollToSection('distributor')}
               className="bg-primary hover:bg-primary/90"
             >
@@ -86,7 +87,7 @@ export function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
+          <button 
             className="lg:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
@@ -103,37 +104,37 @@ export function Header() {
         {isMobileMenuOpen && (
           <div className="lg:hidden pb-4 animate-in fade-in slide-in-from-top-2 duration-200">
             <nav className="flex flex-col space-y-4">
-              <button
+              <button 
                 onClick={() => scrollToSection('home')}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Home
               </button>
-              <button
+              <button 
                 onClick={() => scrollToSection('about')}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 About Us
               </button>
-              <button
+              <button 
                 onClick={() => scrollToSection('products')}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Products
               </button>
-              <button
+              <button 
                 onClick={() => scrollToSection('certifications')}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Certifications
               </button>
-              <button
+              <button 
                 onClick={() => scrollToSection('distributor')}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Contact Us
               </button>
-              <Button
+              <Button 
                 onClick={() => scrollToSection('distributor')}
                 className="bg-primary hover:bg-primary/90 w-full"
               >
