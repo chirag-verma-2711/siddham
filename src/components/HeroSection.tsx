@@ -21,7 +21,7 @@ export function HeroSection() {
     <section id="home" className="relative pt-20 bg-gradient-to-b from-slate-900 to-slate-800">
       {/* Hero Banner Image with Overlay */}
       <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
-        <img
+        <img 
           src={heroBannerImg}
           alt="Siddham Premium Stainless Steel Products"
           className="absolute inset-0 w-full h-full object-cover"
@@ -51,14 +51,14 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
+              <Button 
                 size="lg"
                 onClick={() => scrollToSection('products')}
                 className="bg-primary hover:bg-primary/90 px-8 py-6 text-lg"
               >
                 View Products
               </Button>
-              <Button
+              <Button 
                 size="lg"
                 onClick={() => scrollToSection('distributor')}
                 className="bg-slate-700 hover:bg-slate-600 text-white px-8 py-6 text-lg"
@@ -66,22 +66,6 @@ export function HeroSection() {
                 Become a Distributor
               </Button>
             </div>
-
-            {/* Certification Logos */}
-            <div className="mt-10 flex items-center gap-8">
-              <img
-                src="{heroBannerImg}"
-                alt="ISI Certified"
-                className="h-12 w-auto bg-white p-2 rounded"
-              />
-              <img
-                src="{heroBannerImg}"
-                alt="Bureau of Indian Standards"
-                className="h-12 w-auto bg-white p-2 rounded"
-              />
-            </div>
-
-
           </div>
         </div>
       </div>
