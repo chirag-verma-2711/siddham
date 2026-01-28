@@ -42,7 +42,7 @@ export function Header() {
             <img 
               src={siddhamLogo}
               alt="Siddham Logo" 
-              className="h-24 w-auto"
+              className="h-[100px] w-auto"
             />
           </div>
 
