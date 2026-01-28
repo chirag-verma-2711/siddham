@@ -105,7 +105,7 @@ export function HeroSection() {
           </div>
 
           <div
-            className="absolute top-0 right-30 flex items-center gap-6 mt-8 opacity-80 bg-white/75 w-fit px-5 py-[5px] rounded-md"
+            className="absolute top-0 right-[30px] flex items-center gap-6 mt-8 opacity-80 bg-white/75 w-fit px-5 py-[5px] rounded-md"
             style={{
               background: '#ffffffbf',
               width: 'fit-content',
