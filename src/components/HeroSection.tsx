@@ -72,8 +72,8 @@ export function HeroSection() {
             </div>
 
             {/* Quality Certification Logos */}
-            <div
-              className="flex items-center gap-6 mt-8 opacity-80 bg-white/75 w-fit px-5 py-[5px] rounded-md"
+            {/* <div
+              className="absolute top-6 right-6 flex items-center gap-6 mt-8 opacity-80 bg-white/75 w-fit px-5 py-[5px] rounded-md"
               style={{
                 background: '#ffffffbf',
                 width: 'fit-content',
@@ -83,9 +83,40 @@ export function HeroSection() {
             >
               <img src={isiLogo} alt="ISI Certification" className="h-12 w-auto object-contain" />
               <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
-            </div>
+            </div> */}
+
+            {/* Quality Certification Logos - Top Right */}
+            {/* <div
+              className=" z-20 flex items-center gap-4 bg-white/75 px-5 py-[5px] rounded-md"
+            >
+              <img
+                src={isiLogo}
+                alt="ISI Certification"
+                className="h-10 lg:h-12 w-auto object-contain"
+              />
+              <img
+                src={bisLogo}
+                alt="BIS Certification"
+                className="h-10 lg:h-12 w-auto object-contain"
+              />
+            </div> */}
+
 
           </div>
+
+          <div
+            className="absolute top-6 right-6 flex items-center gap-6 mt-8 opacity-80 bg-white/75 w-fit px-5 py-[5px] rounded-md"
+            style={{
+              background: '#ffffffbf',
+              width: 'fit-content',
+              padding: '5px 20px',
+              borderRadius: '5px'
+            }}
+          >
+            <img src={isiLogo} alt="ISI Certification" className="h-12 w-auto object-contain" />
+            <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
+          </div>
+
         </div>
       </div>
 
