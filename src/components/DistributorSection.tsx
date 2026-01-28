@@ -157,6 +157,7 @@ export function DistributorSection() {
               <div
                 key={index}
                 className="bg-white rounded-lg p-6 text-center border border-border hover:border-primary transition-all hover:shadow-md"
+                onClick={() => scrollToSection('contacts')}
               >
                 <benefit.icon
                   className="w-10 h-10 text-primary mx-auto mb-4"
