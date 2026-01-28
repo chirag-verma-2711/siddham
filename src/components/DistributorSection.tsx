@@ -128,6 +128,7 @@ export function DistributorSection() {
       description: "ISI certified, premium stainless steel range",
     },
     {
+      id: "contacts",
       icon: HeadphonesIcon,
       title: "Support",
       description: "Dedicated distributor support team",
