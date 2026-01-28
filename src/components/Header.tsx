@@ -129,7 +129,7 @@ export function Header() {
                 Certifications
               </button>
               <button 
-                onClick={() => scrollToSection('distributor')}
+                onClick={() => scrollToSection('contacts')}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 Contact Us
