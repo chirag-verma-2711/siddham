@@ -154,7 +154,7 @@ export function ContactSection() {
   };
 
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section id="contacts" className="py-20 lg:py-28 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
