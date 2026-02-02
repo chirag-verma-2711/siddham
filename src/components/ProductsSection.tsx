@@ -21,6 +21,8 @@ import { CheckCircle2 } from 'lucide-react';
 
 import masalaDabbaImg from 'figma:asset/sindoor-masala-dabba-steel-6v.webp';
 import sixMasalaBowls from 'figma:asset/sindoor-masala-dabba-glass-6v.webp';
+import sindoorMasalaDabba9BowlImg from 'figma:asset/sindoor-masala-dabba-steel-9v.webp';
+
 import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.jpg';
 import dryFruitDabbaImgsilver from 'figma:asset/SindoorDryFruit_silver.jpg';
 import squareCanisterImg from 'figma:asset/SquareCanisterSet.jpg';
@@ -33,7 +35,7 @@ import swaad3DMasalaDabbaImg from 'figma:asset/533557484b5de1a2757a6da45041ce1ef
 import celebration3DDryFruitImg from 'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.jpg';
 import premiumMasalaDabbaImg from 'figma:asset/fourCompartment_glass.jpg';
 import premiumMasalaDabbaImgsilver from 'figma:asset/fourCompartment_silver.jpg';
-import sindoorMasalaDabba9BowlImg from 'figma:asset/nineMasalaBowls_silver.jpg';
+
 import nineMasalaBowls from 'figma:asset/nineMasalaBowls.webp';
 
 

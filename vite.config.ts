@@ -29,7 +29,7 @@ export default defineConfig({
       'figma:asset/PoojaSilverBox.webp': path.resolve(__dirname, './src/assets/PoojaSilverBox.webp'),
       'figma:asset/SindoorDryFruit_glass.jpg': path.resolve(__dirname, './src/assets/SindoorDryFruit_glass.jpg'),
       'figma:asset/SindoorDryFruit_silver.jpg': path.resolve(__dirname, './src/assets/SindoorDryFruit_silver.jpg'),
-      'figma:asset/nineMasalaBowls_silver.jpg': path.resolve(__dirname, './src/assets/nineMasalaBowls_silver.jpg'),
+      'figma:asset/sindoor-masala-dabba-steel-9v.webp': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-steel-9v.webp'),
       'figma:asset/SquareTiffin.jpg': path.resolve(__dirname, './src/assets/SquareTiffin.jpg'),
       'figma:asset/SquareCanisterSet.jpg': path.resolve(__dirname, './src/assets/SquareCanisterSet.jpg'),
       'figma:asset/threeTiffinKingTrio.jpg': path.resolve(__dirname, './src/assets/threeTiffinKingTrio.jpg'),
