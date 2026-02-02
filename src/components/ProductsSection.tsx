@@ -1,5 +1,25 @@
 import { CheckCircle2 } from 'lucide-react';
-import masalaDabbaImg from 'figma:asset/6MasalaBowls_silver.webp';
+// import masalaDabbaImg from 'figma:asset/6MasalaBowls_silver.webp';
+// import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.jpg';
+// import dryFruitDabbaImgsilver from 'figma:asset/SindoorDryFruit_silver.jpg';
+// import squareCanisterImg from 'figma:asset/SquareCanisterSet.jpg';
+// import roundTiffinImg from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
+// import squareTiffinImg from 'figma:asset/SquareTiffin.jpg';
+// import poojaSilverBoxImg from 'figma:asset/PoojaSilverBox.webp';
+// import tiffinKingDuoImg from 'figma:asset/twoTierLunch.jpg';
+// import tiffinKingTrioImg from 'figma:asset/threeTiffinKingTrio.jpg';
+// import swaad3DMasalaDabbaImg from 'figma:asset/533557484b5de1a2757a6da45041ce1ef8dea154.jpg';
+// import celebration3DDryFruitImg from 'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.jpg';
+// import premiumMasalaDabbaImg from 'figma:asset/fourCompartment_glass.jpg';
+// import premiumMasalaDabbaImgsilver from 'figma:asset/fourCompartment_silver.jpg';
+// import sindoorMasalaDabba9BowlImg from 'figma:asset/nineMasalaBowls_silver.jpg';
+// import nineMasalaBowls from 'figma:asset/nineMasalaBowls.webp';
+// import sixMasalaBowls from 'figma:asset/sixMasalaBowls.jpg';
+
+
+
+
+import masalaDabbaImg from 'figma:asset/sindoor-masala-dabba-steel-6v.webp';
 import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.jpg';
 import dryFruitDabbaImgsilver from 'figma:asset/SindoorDryFruit_silver.jpg';
 import squareCanisterImg from 'figma:asset/SquareCanisterSet.jpg';
@@ -15,6 +35,8 @@ import premiumMasalaDabbaImgsilver from 'figma:asset/fourCompartment_silver.jpg'
 import sindoorMasalaDabba9BowlImg from 'figma:asset/nineMasalaBowls_silver.jpg';
 import nineMasalaBowls from 'figma:asset/nineMasalaBowls.webp';
 import sixMasalaBowls from 'figma:asset/sixMasalaBowls.jpg';
+
+
 
 export function ProductsSection() {
   const products = [
