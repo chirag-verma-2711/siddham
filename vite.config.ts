@@ -22,13 +22,13 @@ export default defineConfig({
       'input-otp@1.4.2': 'input-otp',
 
       // ✅ KEEP ALL FIGMA ASSETS
-      'figma:asset/twoTierLunch.jpg': path.resolve(__dirname, './src/assets/twoTierLunch.jpg'),
+      'figma:asset/twoTierLunch.png': path.resolve(__dirname, './src/assets/twoTierLunch.png'),
       'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg': path.resolve(__dirname, './src/assets/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg'),
       // 'figma:asset/6MasalaBowls_silver.webp': path.resolve(__dirname, './src/assets/6MasalaBowls_silver.webp'),
       'figma:asset/sindoor-masala-dabba-steel-6v.webp': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-steel-6v.webp'),
       'figma:asset/PoojaSilverBox.webp': path.resolve(__dirname, './src/assets/PoojaSilverBox.webp'),
       'figma:asset/SindoorDryFruit_glass.jpg': path.resolve(__dirname, './src/assets/SindoorDryFruit_glass.jpg'),
-      'figma:asset/SindoorDryFruit_silver.jpg': path.resolve(__dirname, './src/assets/SindoorDryFruit_silver.jpg'),
+      'figma:asset/SindoorDryFruit_silver.png': path.resolve(__dirname, './src/assets/SindoorDryFruit_silver.png'),
       'figma:asset/sindoor-masala-dabba-steel-9v.webp': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-steel-9v.webp'),
       'figma:asset/SquareTiffin.jpg': path.resolve(__dirname, './src/assets/SquareTiffin.jpg'),
       'figma:asset/SquareCanisterSet.jpg': path.resolve(__dirname, './src/assets/SquareCanisterSet.jpg'),
