@@ -36,7 +36,7 @@ import celebration3DDryFruitImg from 'figma:asset/43ca7df0df32d72680a9aa14e61ddb
 import premiumMasalaDabbaImg from 'figma:asset/fourCompartment_glass.jpg';
 import premiumMasalaDabbaImgsilver from 'figma:asset/fourCompartment_silver.jpg';
 
-import nineMasalaBowls from 'figma:asset/nineMasalaBowls.webp';
+import nineMasalaBowls from 'figma:asset/nineMasalaBowls.jpg';
 
 
 

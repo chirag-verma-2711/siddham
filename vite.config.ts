@@ -43,7 +43,7 @@ export default defineConfig({
       'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp': path.resolve(__dirname, './src/assets/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp'),
       'figma:asset/fourCompartment_glass.jpg': path.resolve(__dirname, './src/assets/fourCompartment_glass.jpg'),
       'figma:asset/fourCompartment_silver.jpg': path.resolve(__dirname, './src/assets/fourCompartment_silver.jpg'),
-      'figma:asset/nineMasalaBowls.webp': path.resolve(__dirname, './src/assets/nineMasalaBowls.webp'),
+      'figma:asset/nineMasalaBowls.jpg': path.resolve(__dirname, './src/assets/nineMasalaBowls.jpg'),
       'figma:asset/sindoor-masala-dabba-glass-6v.webp': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-glass-6v.webp'),
 
       '@': path.resolve(__dirname, './src'),
