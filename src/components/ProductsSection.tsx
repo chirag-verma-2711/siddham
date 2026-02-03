@@ -38,6 +38,10 @@ import premiumMasalaDabbaImgsilver from 'figma:asset/fourCompartment_silver.jpg'
 
 import nineMasalaBowls from 'figma:asset/nineMasalaBowls.jpg';
 
+import TiffinSmall300ml from 'figma:asset/Small300ml.jpg';
+import TiffinMedium350ml from 'figma:asset/Medium350ml.jpg';
+import TiffinBig400ml from 'figma:asset/Big400ml.jpg';
+
 
 
 
@@ -225,9 +229,35 @@ export function ProductsSection() {
     },
     {
       name: 'Square Canister Set',
-      image: squareCanisterImg,
+      image: TiffinSmall300ml,
       details: 'Available in 3 sizes',
-      size: 'Small 300ml | Medium 350ml | Big 400ml',
+      size: 'Small 300ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Mirror Finish',
+        'Airtight & Stackable',
+        'Multi Purpose Storage'
+      ]
+    },
+
+    {
+      name: 'Square Canister Set',
+      image: TiffinMedium350ml,
+      details: 'Available in 3 sizes',
+      size: 'Medium 350ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Mirror Finish',
+        'Airtight & Stackable',
+        'Multi Purpose Storage'
+      ]
+    },
+
+    {
+      name: 'Square Canister Set',
+      image: TiffinBig400ml,
+      details: 'Available in 3 sizes',
+      size: 'Big 400ml',
       highlights: [
         'Premium Quality Stainless Steel',
         'Mirror Finish',
@@ -235,6 +265,8 @@ export function ProductsSection() {
         'Multi Purpose Storage'
       ]
     }
+
+
   ];
 
   return (
