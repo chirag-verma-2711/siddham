@@ -23,7 +23,7 @@ import masalaDabbaImg from 'figma:asset/sindoor-masala-dabba-steel-6v.webp';
 import sixMasalaBowls from 'figma:asset/sindoor-masala-dabba-glass-6v.webp';
 import sindoorMasalaDabba9BowlImg from 'figma:asset/sindoor-masala-dabba-steel-9v.webp';
 
-import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.jpg';
+import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.png';
 import dryFruitDabbaImgsilver from 'figma:asset/SindoorDryFruit_silver.png';
 import squareCanisterImg from 'figma:asset/SquareCanisterSet.jpg';
 import roundTiffinImg from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
