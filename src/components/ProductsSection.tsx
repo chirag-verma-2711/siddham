@@ -29,7 +29,7 @@ import squareCanisterImg from 'figma:asset/SquareCanisterSet.jpg';
 import roundTiffinImg from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
 import squareTiffinImg from 'figma:asset/SquareTiffin.jpg';
 import poojaSilverBoxImg from 'figma:asset/PoojaSilverBox.png';
-import tiffinKingDuoImg from 'figma:asset/twoTierLunch.png';
+import tiffinKingDuoImg from 'figma:asset/new-SquareTiffin.jpg';
 import tiffinKingTrioImg from 'figma:asset/threeTiffinKingTrio.jpg';
 import swaad3DMasalaDabbaImg from 'figma:asset/533557484b5de1a2757a6da45041ce1ef8dea154.png';
 import celebration3DDryFruitImg from 'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.jpg';
