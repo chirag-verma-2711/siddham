@@ -205,7 +205,7 @@ export function ProductsSection() {
     },
     {
       name: 'Square Tiffin',
-      image: squareTiffinImg,
+      image: tiffinKingDuoImg,
       details: 'Space-efficient square design',
       size: '11.8×6.1×10.3 cm / 400 ml',
       highlights: [
