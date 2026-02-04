@@ -169,7 +169,7 @@ export function ProductsSection() {
     },
     {
       name: 'Tiffin King Duo',
-      image: tiffinKingDuoImg,
+      image: squareTiffinImg,
       details: '2 Tier Lunch Box with Carry Bag',
       size: '9.5×9.5×10.5 cm / 800 ml',
       highlights: [
