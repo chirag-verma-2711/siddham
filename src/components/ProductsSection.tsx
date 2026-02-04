@@ -31,10 +31,10 @@ import squareTiffinImg from 'figma:asset/SquareTiffin.jpg';
 import poojaSilverBoxImg from 'figma:asset/PoojaSilverBox.webp';
 import tiffinKingDuoImg from 'figma:asset/twoTierLunch.png';
 import tiffinKingTrioImg from 'figma:asset/threeTiffinKingTrio.jpg';
-import swaad3DMasalaDabbaImg from 'figma:asset/533557484b5de1a2757a6da45041ce1ef8dea154.jpg';
+import swaad3DMasalaDabbaImg from 'figma:asset/533557484b5de1a2757a6da45041ce1ef8dea154.png';
 import celebration3DDryFruitImg from 'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.jpg';
 import premiumMasalaDabbaImg from 'figma:asset/fourCompartment_glass.jpg';
-import premiumMasalaDabbaImgsilver from 'figma:asset/fourCompartment_silver.jpg';
+import premiumMasalaDabbaImgsilver from 'figma:asset/fourCompartment_silver.png';
 
 import nineMasalaBowls from 'figma:asset/nineMasalaBowls.jpg';
 
