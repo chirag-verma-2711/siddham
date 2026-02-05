@@ -99,29 +99,45 @@ export function HeroSection() {
       id="home">
       <div>
 
-        {/* Desktop Image (≥768px) */}
-        <img
-          src={websiteBannerPhoneImg}
-          alt="Siddham Premium Stainless Steel Products"
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "none"
-          }}
-          className="desktop-banner"
-        />
+        <>
+          {/* Media Query CSS */}
+          <style>
+            {`
+      @media (min-width: 768px) {
+        .desktop-banner {
+          display: block !important;
+        }
+        .mobile-banner {
+          display: none !important;
+        }
+      }
+    `}
+          </style>
 
-        {/* Mobile Image (<768px) */}
-        <img
-          src={websiteBannerImg}
-          alt="Siddham Premium Stainless Steel Products"
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block"
-          }}
-          className="mobile-banner"
-        />
+          {/* Desktop Image (≥768px) */}
+          <img
+            src={websiteBannerPhoneImg}
+            alt="Siddham Premium Stainless Steel Products"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "none"
+            }}
+            className="desktop-banner"
+          />
+
+          {/* Mobile Image (<768px) */}
+          <img
+            src={websiteBannerImg}
+            alt="Siddham Premium Stainless Steel Products"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block"
+            }}
+            className="mobile-banner"
+          />
+        </>
 
 
       </div>
