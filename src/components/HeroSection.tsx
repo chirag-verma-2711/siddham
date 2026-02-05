@@ -99,18 +99,30 @@ export function HeroSection() {
       id="home">
       <div>
 
+        {/* Desktop Image (≥768px) */}
         <img
           src={websiteBannerImg}
           alt="Siddham Premium Stainless Steel Products"
-          className="w-full h-auto hidden md:block"
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "none"
+          }}
+          className="desktop-banner"
         />
 
         {/* Mobile Image (<768px) */}
         <img
           src={websiteBannerPhoneImg}
           alt="Siddham Premium Stainless Steel Products"
-          className="w-full h-auto block md:hidden"
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block"
+          }}
+          className="mobile-banner"
         />
+
 
       </div>
 
