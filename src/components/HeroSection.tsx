@@ -110,8 +110,5 @@ export function HeroSection() {
     </section>
 
 
-
-
-
   );
 }
