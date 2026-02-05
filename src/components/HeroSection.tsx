@@ -1,6 +1,7 @@
 import { Button } from './ui/button';
 // import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9-CsluWBe2.webp';
 import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp';
+import newheroBannerImg from 'figma:asset/new-3b18af72beb1d361403d456a15c314b6ac1fa9a9.jpg';
 // import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
 
 import isiLogo from '../assets/isi_logo.png';
@@ -90,7 +91,7 @@ export function HeroSection() {
 
       <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
         <img
-          src={heroBannerImg}
+          src={newheroBannerImg}
           alt="Siddham Premium Stainless Steel Products"
           className="absolute inset-0 w-full h-full object-cover"
         />
