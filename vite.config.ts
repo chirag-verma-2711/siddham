@@ -52,6 +52,8 @@ export default defineConfig({
       'figma:asset/Big400ml.jpg': path.resolve(__dirname, './src/assets/Big400ml.jpg'),
       'figma:asset/new-SquareTiffin.jpg': path.resolve(__dirname, './src/assets/new-SquareTiffin.jpg'),
 
+      'figma:asset/website-bannar-phone-src.jpg': path.resolve(__dirname, './src/assets/website-bannar-phone-src.jpg'),
+
 
       '@': path.resolve(__dirname, './src'),
     },

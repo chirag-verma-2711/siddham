@@ -3,6 +3,7 @@ import { Button } from './ui/button';
 import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp';
 import newheroBannerImg from 'figma:asset/new-3b18af72beb1d361403d456a15c314b6ac1fa9a9.jpg';
 import websiteBannerImg from 'figma:asset/website-bannar.jpg';
+import websiteBannerPhoneImg from 'figma:asset/website-bannar-phone-src.jpg';
 // import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
 
 import isiLogo from '../assets/isi_logo.png';
@@ -97,11 +98,20 @@ export function HeroSection() {
     <section
       id="home">
       <div>
+
         <img
           src={websiteBannerImg}
           alt="Siddham Premium Stainless Steel Products"
-          className="w-full h-auto"
+          className="w-full h-auto hidden md:block"
         />
+
+        {/* Mobile Image (<768px) */}
+        <img
+          src={websiteBannerPhoneImg}
+          alt="Siddham Premium Stainless Steel Products"
+          className="w-full h-auto block md:hidden"
+        />
+
       </div>
 
       {/* Decorative element */}
