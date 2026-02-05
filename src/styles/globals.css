@@ -186,11 +186,3 @@ html {
 }
 
 
-@media (min-width: 768px) {
-  .desktop-banner {
-    display: block !important;
-  }
-  .mobile-banner {
-    display: none !important;
-  }
-}
