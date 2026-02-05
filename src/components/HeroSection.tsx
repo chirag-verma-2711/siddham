@@ -1,6 +1,6 @@
 import { Button } from './ui/button';
 // import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9-CsluWBe2.webp';
-import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp';
+import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.jpg';
 // import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
 
 import isiLogo from '../assets/isi_logo.png';
@@ -54,7 +54,7 @@ export function HeroSection() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
                 onClick={() => scrollToSection('products')}
@@ -69,7 +69,7 @@ export function HeroSection() {
               >
                 Become a Distributor
               </Button>
-            </div>
+            </div> */}
           </div>
 
           <div
