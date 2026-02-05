@@ -116,7 +116,7 @@ export function HeroSection() {
 
           {/* Desktop Image (≥768px) */}
           <img
-            src={websiteBannerPhoneImg}
+            src={websiteBannerImg}
             alt="Siddham Premium Stainless Steel Products"
             style={{
               width: "100%",
@@ -128,7 +128,7 @@ export function HeroSection() {
 
           {/* Mobile Image (<768px) */}
           <img
-            src={websiteBannerImg}
+            src={websiteBannerPhoneImg}
             alt="Siddham Premium Stainless Steel Products"
             style={{
               width: "100%",
