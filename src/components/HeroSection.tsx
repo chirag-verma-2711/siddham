@@ -24,36 +24,36 @@ export function HeroSection() {
   return (
     <section id="home" className="relative pt-20 bg-gradient-to-b from-slate-900 to-slate-800">
       {/* Hero Banner Image with Overlay */}
-      <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
+      {/* <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
         <img
           src={heroBannerImg}
           alt="Siddham Premium Stainless Steel Products"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        {/* Gradient Overlay for text readability */}
+
         <div className="absolute inset-0" style={{
           background: "linear-gradient(90deg, rgb(0 0 0 / 20%), transparent)"
         }}></div>
 
-        {/* Content */}
+
         <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center">
           <div className="max-w-2xl text-white">
-            {/* Tagline */}
+
             <p className="text-sm lg:text-base tracking-wider mb-4 text-slate-300">
               A BRAND OF DEEP METAL INDUSTRIES
             </p>
 
-            {/* Headline */}
+
             <h1 className="text-4xl lg:text-5xl xl:text-6xl mb-6 leading-tight">
               Engineered Stainless Steel Homeware. Trusted Quality.
             </h1>
 
-            {/* Subtext */}
+
             <p className="text-lg lg:text-xl text-slate-200 mb-10 max-w-xl">
               Exclusive quality home products with professional stainless steel construction.
             </p>
 
-            {/* CTA Buttons */}
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
@@ -86,6 +86,14 @@ export function HeroSection() {
           </div>
 
         </div>
+      </div> */}
+
+      <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
+        <img
+          src={heroBannerImg}
+          alt="Siddham Premium Stainless Steel Products"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
 
       {/* Decorative element */}
