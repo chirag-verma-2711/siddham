@@ -31,9 +31,9 @@ export function Header() {
 
   return (
     <header 
-      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={` top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
-      }`}
+      }`style={{ position: "sticky"}}}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
@@ -43,6 +43,7 @@ export function Header() {
               src={siddhamLogo}
               alt="Siddham Logo" 
               className="h-24 w-auto"
+              style={{ height: 120px; }}
             />
           </div>
 
