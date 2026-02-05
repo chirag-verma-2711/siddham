@@ -184,3 +184,13 @@ html {
   font-size: var(--font-size);
   scroll-behavior: smooth;
 }
+
+
+@media (min-width: 768px) {
+  .desktop-banner {
+    display: block !important;
+  }
+  .mobile-banner {
+    display: none !important;
+  }
+}
