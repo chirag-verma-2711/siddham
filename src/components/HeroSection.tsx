@@ -36,25 +36,21 @@ export function HeroSection() {
         }}></div>
 
         {/* Content */}
-        <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center">
+        {/* <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center">
           <div className="max-w-2xl text-white">
-            {/* Tagline */}
             <p className="text-sm lg:text-base tracking-wider mb-4 text-slate-300">
               A BRAND OF DEEP METAL INDUSTRIES
             </p>
 
-            {/* Headline */}
             <h1 className="text-4xl lg:text-5xl xl:text-6xl mb-6 leading-tight">
               Engineered Stainless Steel Homeware. Trusted Quality.
             </h1>
 
-            {/* Subtext */}
             <p className="text-lg lg:text-xl text-slate-200 mb-10 max-w-xl">
               Exclusive quality home products with professional stainless steel construction.
             </p>
 
-            {/* CTA Buttons */}
-            {/* <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
                 onClick={() => scrollToSection('products')}
@@ -69,7 +65,7 @@ export function HeroSection() {
               >
                 Become a Distributor
               </Button>
-            </div> */}
+            </div>
           </div>
 
           <div
@@ -85,7 +81,7 @@ export function HeroSection() {
             <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
           </div>
 
-        </div>
+        </div> */}
       </div>
 
       {/* Decorative element */}
