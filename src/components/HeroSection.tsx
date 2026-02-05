@@ -94,14 +94,12 @@ export function HeroSection() {
 
 
     <section
-      id="home"
-      className="relative pt-20 bg-gradient-to-b from-slate-900 to-slate-800"
-    >
-      <div className="h-[600px] lg:h-[1265px] flex items-center justify-center">
+      id="home">
+      <div className="pt-[95px]">
         <img
           src={newheroBannerImg}
           alt="Siddham Premium Stainless Steel Products"
-          className="max-w-full h-auto"
+          className="w-full h-auto"
         />
       </div>
 
