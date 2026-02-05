@@ -1,6 +1,6 @@
 import { Button } from './ui/button';
 // import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9-CsluWBe2.webp';
-import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.jpg';
+import heroBannerImg from 'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp';
 // import siddhamLogo from 'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png';
 
 import isiLogo from '../assets/isi_logo.png';
@@ -36,20 +36,24 @@ export function HeroSection() {
         }}></div>
 
         {/* Content */}
-        {/* <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center">
+        <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center">
           <div className="max-w-2xl text-white">
+            {/* Tagline */}
             <p className="text-sm lg:text-base tracking-wider mb-4 text-slate-300">
               A BRAND OF DEEP METAL INDUSTRIES
             </p>
 
+            {/* Headline */}
             <h1 className="text-4xl lg:text-5xl xl:text-6xl mb-6 leading-tight">
               Engineered Stainless Steel Homeware. Trusted Quality.
             </h1>
 
+            {/* Subtext */}
             <p className="text-lg lg:text-xl text-slate-200 mb-10 max-w-xl">
               Exclusive quality home products with professional stainless steel construction.
             </p>
 
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
@@ -81,7 +85,7 @@ export function HeroSection() {
             <img src={bisLogo} alt="BIS Certification" className="h-12 w-auto object-contain" />
           </div>
 
-        </div> */}
+        </div>
       </div>
 
       {/* Decorative element */}

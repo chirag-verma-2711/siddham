@@ -40,7 +40,7 @@ export default defineConfig({
       'figma:asset/icon_fotter.png': path.resolve(__dirname, './src/assets/icon_fotter.png'),
 
       'figma:asset/43ca7df0df32d72680a9aa14e61ddbf303836314.jpg': path.resolve(__dirname, './src/assets/43ca7df0df32d72680a9aa14e61ddbf303836314.jpg'),
-      'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.jpg': path.resolve(__dirname, './src/assets/3b18af72beb1d361403d456a15c314b6ac1fa9a9.jpg'),
+      'figma:asset/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp': path.resolve(__dirname, './src/assets/3b18af72beb1d361403d456a15c314b6ac1fa9a9.webp'),
       'figma:asset/fourCompartment_glass.jpg': path.resolve(__dirname, './src/assets/fourCompartment_glass.jpg'),
       'figma:asset/fourCompartment_silver.png': path.resolve(__dirname, './src/assets/fourCompartment_silver.png'),
       'figma:asset/nineMasalaBowls.jpg': path.resolve(__dirname, './src/assets/nineMasalaBowls.jpg'),
