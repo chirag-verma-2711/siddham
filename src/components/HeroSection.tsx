@@ -95,7 +95,7 @@ export function HeroSection() {
 
     <section
       id="home">
-      <div className="pt-24">
+      <div style={{ paddingTop: "95px" }}>
         <img
           src={newheroBannerImg}
           alt="Siddham Premium Stainless Steel Products"
