@@ -62,13 +62,13 @@ export function ProductsSection() {
     {
       name: 'Sindoor Masala Dabba',
       image: sixMasalaBowls,
-      details: '6 Masala Bowls & 1 Masala Spoon',
-      size: '23.3×15.7×6 cm / 1250 ml',
+      details: '1 set of Dabba has 6 Masala Bowls & 1 Masala Spoon',
+      size: '23.3x15.7x6 cm/1250 ml',
       highlights: [
-        'Premium Quality Stainless Steel',
-        'Mirror Finish - Lustrous Appearance',
-        'Multi Purpose Dabba',
-        '100% Odourless & Hygienic'
+        'Premium Quality Stainless Steel.',
+        'Mirror Finish Adds Gives a Lustrous Finish.',
+        'It’s a Multi Purpose Dabba.',
+        '100% Odourless & Hygienic.'
       ]
     },
     {
@@ -86,13 +86,13 @@ export function ProductsSection() {
     {
       name: 'Sindoor Masala Dabba',
       image: nineMasalaBowls,
-      details: '9 Masala Bowls & 1 Masala Spoon',
-      size: '23.0×23.0×6.5 cm / 1900 ml',
+      details: '1 set of Dabba has 9 Masala Bowls & 1 Masala Spoon',
+      size: '23.0x23.0x6.5 cm/1900 ml',
       highlights: [
-        'Premium Quality Stainless Steel',
-        'Mirror Finish - Lustrous Appearance',
-        'Multi Purpose Dabba',
-        '100% Odourless & Hygienic'
+        'Premium Quality Stainless Steel.',
+        'Mirror Finish Adds Gives a Lustrous Finish.',
+        'It’s a Multi Purpose Dabba.',
+        '100% Odourless & Hygienic.'
       ]
     },
     {
@@ -110,13 +110,13 @@ export function ProductsSection() {
     {
       name: 'Sindoor masala dabba 4 vati',
       image: premiumMasalaDabbaImg,
-      details: '4 Compartment Spice Container with Lid',
-      size: '20.0×20.0×6.5 cm / 1200 ml',
+      details: '1 set of Dabba has 4 Masala Bowls & 1 Masala Spoon',
+      size: '15.8x15.8x6 cm/900 ml',
       highlights: [
-        'Premium Mirror Finish Stainless Steel',
-        'Airtight Transparent Lid',
-        '4 Deep Compartments',
-        'Elegant Modern Design'
+        'Premium Quality Stainless Steel.',
+        'Mirror Finish Adds Gives a Lustrous Finish.',
+        'It’s a Multi Purpose Dabba.',
+        '100% Odourless & Hygienic.'
       ]
     },
     {
@@ -134,13 +134,13 @@ export function ProductsSection() {
     {
       name: 'Sindoor Dry Fruit Dabba',
       image: dryFruitDabbaImg,
-      details: '1 Set with 4 Bowls',
-      size: '23.0×23.0×6.5 cm / 1900 ml',
+      details: '1 set of Dabba has 4 Bowls',
+      size: '23.0x23.0x6.5 cm/1900 ml',
       highlights: [
         'Premium Quality Stainless Steel',
-        'Mirror Finish - Lustrous Appearance',
-        'Multi Purpose Dabba',
-        '100% Odourless & Hygienic'
+        'Mirror Finish Adds Gives a Lustrous Finish.',
+        'It’s a Multi Purpose Dabba.',
+        '100% Odourless & Hygienic.'
       ]
     },
     {
