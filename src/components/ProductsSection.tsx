@@ -111,7 +111,7 @@ export function ProductsSection() {
       name: 'Sindoor masala dabba 4 vati',
       image: premiumMasalaDabbaImg,
       details: '4 Compartment Spice Container with Lid',
-      size: '20.0×20.0×6.5 cm / 1500 ml',
+      size: '20.0×20.0×6.5 cm / 1200 ml',
       highlights: [
         'Premium Mirror Finish Stainless Steel',
         'Airtight Transparent Lid',
@@ -123,7 +123,7 @@ export function ProductsSection() {
       name: 'Sindoor masala dabba 4 vati',
       image: premiumMasalaDabbaImgsilver,
       details: '4 Compartment Spice Container with Lid',
-      size: '20.0×20.0×6.5 cm / 1500 ml',
+      size: '20.0×20.0×6.5 cm / 1200 ml',
       highlights: [
         'Premium Mirror Finish Stainless Steel',
         'Airtight Transparent Lid',

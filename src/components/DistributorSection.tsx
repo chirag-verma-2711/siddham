@@ -24,6 +24,7 @@ export function DistributorSection() {
     email: "",
     city: "",
     state: "",
+    gstNumber: "",
     businessType: "",
     message: "",
   });
@@ -40,6 +41,12 @@ export function DistributorSection() {
     message: "",
   });
 
+  const isValidGST = (gst: string) => {
+    const gstRegex =
+      /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/;
+    return gstRegex.test(gst.toUpperCase());
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -51,6 +58,14 @@ export function DistributorSection() {
       setFormStatus({
         type: "error",
         message: "Please verify that you are not a robot.",
+      });
+      return;
+    }
+
+    if (!isValidGST(formData.gstNumber)) {
+      setFormStatus({
+        type: "error",
+        message: "Please enter a valid GST number.",
       });
       return;
     }
@@ -85,6 +100,7 @@ export function DistributorSection() {
           email: "",
           city: "",
           state: "",
+          gstNumber: "",
           businessType: "",
           message: "",
         });
@@ -251,6 +267,28 @@ export function DistributorSection() {
                 </div>
 
                 <div className="space-y-2">
+                  <Label>GST Number *</Label>
+                  <Input
+                    required
+                    value={formData.gstNumber}
+                    maxLength={15}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        gstNumber: e.target.value.toUpperCase(),
+                      })
+                    }
+                    placeholder="27AAPFU0939F1ZV"
+                  />
+                  {/* GST inline validation message */}
+                  {formData.gstNumber && !isValidGST(formData.gstNumber) && (
+                    <p className="text-sm text-red-500">
+                      Invalid GST format (e.g. 27AAPFU0939F1ZV)
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
                   <Label>State *</Label>
                   <Input
                     required
@@ -260,28 +298,30 @@ export function DistributorSection() {
                     }
                   />
                 </div>
+
+                <div className="space-y-2">
+                  <Label>Type of Business *</Label>
+                  <Select
+                    value={formData.businessType}
+                    onValueChange={(value) =>
+                      setFormData({ ...formData, businessType: value })
+                    }
+                  >
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select business type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="wholesaler">Wholesaler</SelectItem>
+                      <SelectItem value="retailer">Retailer</SelectItem>
+                      <SelectItem value="distributor">Distributor</SelectItem>
+                      <SelectItem value="trader">Trader</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
 
-              <div className="space-y-2">
-                <Label>Type of Business *</Label>
-                <Select
-                  value={formData.businessType}
-                  onValueChange={(value) =>
-                    setFormData({ ...formData, businessType: value })
-                  }
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select business type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="wholesaler">Wholesaler</SelectItem>
-                    <SelectItem value="retailer">Retailer</SelectItem>
-                    <SelectItem value="distributor">Distributor</SelectItem>
-                    <SelectItem value="trader">Trader</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
+              
 
               <div className="space-y-2">
                 <Label>Message</Label>
