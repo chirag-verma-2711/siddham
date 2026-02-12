@@ -202,6 +202,18 @@ export function ProductsSection() {
       ]
     },
     {
+      name: 'Square Tiffin',
+      image: tiffinKingDuoImg,
+      details: 'Space-efficient square design',
+      size: '11.8×6.1×10.3 cm / 400 ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Secure Locking Mechanism',
+        'Leak-Proof',
+        'Space-Saving Design'
+      ]
+    },
+    {
       name: 'Tiffin King Duo',
       image: squareTiffinImg,
       details: '2 Tier Lunch Box with Carry Bag',
@@ -249,18 +261,7 @@ export function ProductsSection() {
         'Premium Craftsmanship'
       ]
     },
-    {
-      name: 'Square Tiffin',
-      image: tiffinKingDuoImg,
-      details: 'Space-efficient square design',
-      size: '11.8×6.1×10.3 cm / 400 ml',
-      highlights: [
-        'Premium Quality Stainless Steel',
-        'Secure Locking Mechanism',
-        'Leak-Proof',
-        'Space-Saving Design'
-      ]
-    },
+    
   ];
 
   return (
