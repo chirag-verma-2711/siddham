@@ -45,6 +45,30 @@ import TiffinBig400ml from 'figma:asset/Big400ml.jpg';
 export function ProductsSection() {
   const products = [
     {
+      name: 'Sindoor masala dabba 4 vati',
+      image: premiumMasalaDabbaImgsilver,
+      details: '1 set of Dabba has 4 Masala Bowls & 1 Masala Spoon',
+      size: '15.8x15.8x6 cm/900 ml',
+      highlights: [
+        'Premium Mirror Finish Stainless Steel',
+        'Airtight Transparent Lid',
+        '4 Deep Compartments',
+        'Elegant Modern Design'
+      ]
+    },
+    {
+      name: 'Sindoor masala dabba 4 vati',
+      image: premiumMasalaDabbaImg,
+      details: '1 set of Dabba has 4 Masala Bowls & 1 Masala Spoon',
+      size: '15.8x15.8x6 cm/900 ml',
+      highlights: [
+        // 'Premium Quality Stainless Steel.',
+        'Mirror Finish Adds Gives a Lustrous Finish.',
+        'It’s a Multi Purpose Dabba.',
+        '100% Odourless & Hygienic.'
+      ]
+    },
+    {
       name: 'Sindoor Masala Dabba',
       image: masalaDabbaImg,
       details: '1 set of Dabba has 6 Masala Bowls & 1 Masala Spoon',
@@ -102,30 +126,6 @@ export function ProductsSection() {
         '9 Individual Compartments',
         'Unique 3D Design',
         'Perfect for Complete Spice Collection'
-      ]
-    },
-    {
-      name: 'Sindoor masala dabba 4 vati',
-      image: premiumMasalaDabbaImg,
-      details: '1 set of Dabba has 4 Masala Bowls & 1 Masala Spoon',
-      size: '15.8x15.8x6 cm/900 ml',
-      highlights: [
-        // 'Premium Quality Stainless Steel.',
-        'Mirror Finish Adds Gives a Lustrous Finish.',
-        'It’s a Multi Purpose Dabba.',
-        '100% Odourless & Hygienic.'
-      ]
-    },
-    {
-      name: 'Sindoor masala dabba 4 vati',
-      image: premiumMasalaDabbaImgsilver,
-      details: '1 set of Dabba has 4 Masala Bowls & 1 Masala Spoon',
-      size: '15.8x15.8x6 cm/900 ml',
-      highlights: [
-        'Premium Mirror Finish Stainless Steel',
-        'Airtight Transparent Lid',
-        '4 Deep Compartments',
-        'Elegant Modern Design'
       ]
     },
     {
@@ -208,7 +208,7 @@ export function ProductsSection() {
       highlights: [
         'Premium Quality Stainless Steel',
         'Secure Locking Mechanism',
-        'Leak-Proof & Stackable',
+        'Leak-Proof',
         'Space-Saving Design'
       ]
     },

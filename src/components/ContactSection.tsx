@@ -184,7 +184,7 @@ export function ContactSection() {
                   <p className="text-muted-foreground">
                     Ground floor Evershine, Industrial Estate,
                     <br />
-                    A 6/13, Dewan And Shah Udyog Nagar,
+                    A 6/12/13, Dewan And Shah Udyog Nagar,
                     <br />
                     Chinchpada, Vasai East, Waliv,
                     <br />
