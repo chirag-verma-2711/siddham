@@ -130,18 +130,6 @@ export function ProductsSection() {
     },
     {
       name: 'Sindoor Dry Fruit Dabba',
-      image: dryFruitDabbaImg,
-      details: '1 set of Dabba has 4 Bowls',
-      size: '23.0x23.0x6.5 cm/1900 ml',
-      highlights: [
-        // 'Premium Quality Stainless Steel',
-        'Mirror Finish Adds Gives a Lustrous Finish.',
-        'It’s a Multi Purpose Dabba.',
-        '100% Odourless & Hygienic.'
-      ]
-    },
-    {
-      name: 'Sindoor Dry Fruit Dabba',
       image: dryFruitDabbaImgsilver,
       details: '1 set of Dabba has 4 Bowls',
       size: '23.0x23.0x6.5 cm/1900 ml',
@@ -150,6 +138,18 @@ export function ProductsSection() {
         // 'Mirror Finish - Lustrous Appearance',
         'Multi Purpose Dabba',
         '100% Odourless & Hygienic'
+      ]
+    },
+    {
+      name: 'Sindoor Dry Fruit Dabba',
+      image: dryFruitDabbaImg,
+      details: '1 set of Dabba has 4 Bowls',
+      size: '23.0x23.0x6.5 cm/1900 ml',
+      highlights: [
+        // 'Premium Quality Stainless Steel',
+        'Mirror Finish Adds Gives a Lustrous Finish.',
+        'It’s a Multi Purpose Dabba.',
+        '100% Odourless & Hygienic.'
       ]
     },
     {
@@ -162,6 +162,43 @@ export function ProductsSection() {
         'Unique 3D Compartment Design',
         'Mirror Finish - Premium Look',
         'Perfect for Gifting & Serving'
+      ]
+    }, {
+      name: 'Square Canister Set',
+      image: TiffinSmall300ml,
+      details: 'Available in 3 sizes',
+      size: 'Small 300ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Mirror Finish',
+        'Airtight & Stackable',
+        'Multi Purpose Storage'
+      ]
+    },
+
+    {
+      name: 'Square Canister Set',
+      image: TiffinMedium350ml,
+      details: 'Available in 3 sizes',
+      size: 'Medium 350ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Mirror Finish',
+        'Airtight & Stackable',
+        'Multi Purpose Storage'
+      ]
+    },
+
+    {
+      name: 'Square Canister Set',
+      image: TiffinBig400ml,
+      details: 'Available in 3 sizes',
+      size: 'Big 400ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Mirror Finish',
+        'Airtight & Stackable',
+        'Multi Purpose Storage'
       ]
     },
     {
@@ -201,18 +238,6 @@ export function ProductsSection() {
       ]
     },
     {
-      name: 'Square Tiffin',
-      image: tiffinKingDuoImg,
-      details: 'Space-efficient square design',
-      size: '11.8×6.1×10.3 cm / 400 ml',
-      highlights: [
-        'Premium Quality Stainless Steel',
-        'Secure Locking Mechanism',
-        'Leak-Proof',
-        'Space-Saving Design'
-      ]
-    },
-    {
       name: 'Pooja Silver Box',
       image: poojaSilverBoxImg,
       details: 'Traditional design with engraved motifs',
@@ -225,45 +250,17 @@ export function ProductsSection() {
       ]
     },
     {
-      name: 'Square Canister Set',
-      image: TiffinSmall300ml,
-      details: 'Available in 3 sizes',
-      size: 'Small 300ml',
+      name: 'Square Tiffin',
+      image: tiffinKingDuoImg,
+      details: 'Space-efficient square design',
+      size: '11.8×6.1×10.3 cm / 400 ml',
       highlights: [
         'Premium Quality Stainless Steel',
-        'Mirror Finish',
-        'Airtight & Stackable',
-        'Multi Purpose Storage'
+        'Secure Locking Mechanism',
+        'Leak-Proof',
+        'Space-Saving Design'
       ]
     },
-
-    {
-      name: 'Square Canister Set',
-      image: TiffinMedium350ml,
-      details: 'Available in 3 sizes',
-      size: 'Medium 350ml',
-      highlights: [
-        'Premium Quality Stainless Steel',
-        'Mirror Finish',
-        'Airtight & Stackable',
-        'Multi Purpose Storage'
-      ]
-    },
-
-    {
-      name: 'Square Canister Set',
-      image: TiffinBig400ml,
-      details: 'Available in 3 sizes',
-      size: 'Big 400ml',
-      highlights: [
-        'Premium Quality Stainless Steel',
-        'Mirror Finish',
-        'Airtight & Stackable',
-        'Multi Purpose Storage'
-      ]
-    }
-
-
   ];
 
   return (
@@ -282,13 +279,13 @@ export function ProductsSection() {
           {/* Products Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {products.map((product, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border group"
               >
                 {/* Product Image */}
                 <div className="relative overflow-hidden bg-white">
-                  <img 
+                  <img
                     src={product.image}
                     alt={product.name}
                     className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
@@ -300,7 +297,7 @@ export function ProductsSection() {
                   <h3 className="text-lg mb-1 text-foreground">{product.name}</h3>
                   <p className="text-sm text-muted-foreground mb-2">{product.details}</p>
                   <p className="text-sm mb-4 text-primary">{product.size}</p>
-                  
+
                   {/* Highlights */}
                   <div className="space-y-2">
                     {product.highlights.map((highlight, idx) => (
