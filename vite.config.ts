@@ -36,6 +36,7 @@ export default defineConfig({
       'figma:asset/threeTiffinKingTrio.jpg': path.resolve(__dirname, './src/assets/threeTiffinKingTrio.jpg'),
       'figma:asset/5b8a162295fdb3671fb90892665aed62c800a6e9.png': path.resolve(__dirname, './src/assets/5b8a162295fdb3671fb90892665aed62c800a6e9.png'),
       'figma:asset/533557484b5de1a2757a6da45041ce1ef8dea154.png': path.resolve(__dirname, './src/assets/533557484b5de1a2757a6da45041ce1ef8dea154.png'),
+      'figma:asset/ninemasaka-3D.jpg': path.resolve(__dirname, './src/assets/ninemasaka-3D.jpg'),
       'figma:asset/46f7468268dc4910cc1671a5d6957250ae4f881b.png': path.resolve(__dirname, './src/assets/46f7468268dc4910cc1671a5d6957250ae4f881b.png'),
 
       'figma:asset/icon_fotter.png': path.resolve(__dirname, './src/assets/icon_fotter.png'),
