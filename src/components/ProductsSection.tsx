@@ -26,6 +26,10 @@ import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.jpg';
 import dryFruitDabbaImgsilver from 'figma:asset/SindoorDryFruit_silver.jpg';
 import squareCanisterImg from 'figma:asset/SquareCanisterSet.jpg';
 import roundTiffinImg from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
+
+import RoundTiffinMedium from 'figma:asset/RoundTiffinMedium.jpg';
+import RoundTiffinBig from 'figma:asset/RoundTiffinMedium.jpg';
+
 import roundTiffinImgMedium from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
 import roundTiffinImgBig from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
 import squareTiffinImg from 'figma:asset/SquareTiffin.jpg';
@@ -253,7 +257,7 @@ export function ProductsSection() {
     },
     {
       name: 'Round Tiffin',
-      image: roundTiffinImgMedium,
+      image: RoundTiffinMedium,
       details: 'Available in 3 sizes',
       size: 'Medium 400ml',
       highlights: [
@@ -265,7 +269,7 @@ export function ProductsSection() {
     },
     {
       name: 'Round Tiffin',
-      image: roundTiffinImgBig,
+      image: RoundTiffinBig,
       details: 'Available in 3 sizes',
       size: 'Big 600ml',
       highlights: [
