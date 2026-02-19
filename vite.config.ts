@@ -45,6 +45,7 @@ export default defineConfig({
       'figma:asset/website-bannar.jpg': path.resolve(__dirname, './src/assets/website-bannar.jpg'),
       'figma:asset/fourCompartment_glass.jpg': path.resolve(__dirname, './src/assets/fourCompartment_glass.jpg'),
       'figma:asset/fourCompartment_silver.png': path.resolve(__dirname, './src/assets/fourCompartment_silver.png'),
+      'figma:asset/fourCompartment_silverss.jpg': path.resolve(__dirname, './src/assets/fourCompartment_silverss.jpg'),
       'figma:asset/nineMasalaBowls.jpg': path.resolve(__dirname, './src/assets/nineMasalaBowls.jpg'),
       'figma:asset/sindoor-masala-dabba-glass-6v.webp': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-glass-6v.webp'),
       'figma:asset/Small300ml.jpg': path.resolve(__dirname, './src/assets/Small300ml.jpg'),
