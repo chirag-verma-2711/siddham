@@ -19,7 +19,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 
 
-import masalaDabbaImg from 'figma:asset/sindoor-masala-dabba-steel-6v.webp';
+import masalaDabbaImg from 'figma:asset/sindoor-masala-dabba-steel.jpg';
 import sixMasalaBowls from 'figma:asset/sindoor-masala-dabba-glass-6v.webp';
 import sindoorMasalaDabba9BowlImg from 'figma:asset/sindoor-masala-dabba-steel-9v.webp';
 import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.png';
