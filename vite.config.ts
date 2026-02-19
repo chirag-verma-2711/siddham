@@ -30,6 +30,7 @@ export default defineConfig({
       'figma:asset/SindoorDryFruit_glass.png': path.resolve(__dirname, './src/assets/SindoorDryFruit_glass.png'),
       'figma:asset/SindoorDryFruit_silver.png': path.resolve(__dirname, './src/assets/SindoorDryFruit_silver.png'),
       'figma:asset/sindoor-masala-dabba-steel-9v.webp': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-steel-9v.webp'),
+      'figma:asset/sindoor-masala-dabba-steel.jpg': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-steel.jpg'),
       'figma:asset/SquareTiffin.jpg': path.resolve(__dirname, './src/assets/SquareTiffin.jpg'),
       'figma:asset/SquareCanisterSet.jpg': path.resolve(__dirname, './src/assets/SquareCanisterSet.jpg'),
       'figma:asset/threeTiffinKingTrio.jpg': path.resolve(__dirname, './src/assets/threeTiffinKingTrio.jpg'),
