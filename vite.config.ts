@@ -28,7 +28,7 @@ export default defineConfig({
       'figma:asset/sindoor-masala-dabba-steel-6v.webp': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-steel-6v.webp'),
       'figma:asset/PoojaSilverBox.png': path.resolve(__dirname, './src/assets/PoojaSilverBox.png'),
       'figma:asset/SindoorDryFruit_glass.png': path.resolve(__dirname, './src/assets/SindoorDryFruit_glass.png'),
-      'figma:asset/SindoorDryFruit_silver.png': path.resolve(__dirname, './src/assets/SindoorDryFruit_silver.png'),
+      'figma:asset/SindoorDryFruit_silver.jpg': path.resolve(__dirname, './src/assets/SindoorDryFruit_silver.jpg'),
       'figma:asset/sindoor-masala-dabba-steel-9v.jpg': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-steel-9v.jpg'),
       'figma:asset/sindoor-masala-dabba-steel.jpg': path.resolve(__dirname, './src/assets/sindoor-masala-dabba-steel.jpg'),
       'figma:asset/SquareTiffin.jpg': path.resolve(__dirname, './src/assets/SquareTiffin.jpg'),
