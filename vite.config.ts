@@ -57,6 +57,8 @@ export default defineConfig({
       'figma:asset/new-SquareTiffin.jpg': path.resolve(__dirname, './src/assets/new-SquareTiffin.jpg'),
 
       'figma:asset/website-bannar-phone-src.jpeg': path.resolve(__dirname, './src/assets/website-bannar-phone-src.jpeg'),
+      'figma:asset/RoundTiffinBig.jpg': path.resolve(__dirname, './src/assets/RoundTiffinBig.jpg'),
+      'figma:asset/RoundTiffinMedium.jpg': path.resolve(__dirname, './src/assets/RoundTiffinMedium.jpg'),
 
 
       '@': path.resolve(__dirname, './src'),

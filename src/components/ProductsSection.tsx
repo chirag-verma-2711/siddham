@@ -26,6 +26,8 @@ import dryFruitDabbaImg from 'figma:asset/SindoorDryFruit_glass.jpg';
 import dryFruitDabbaImgsilver from 'figma:asset/SindoorDryFruit_silver.jpg';
 import squareCanisterImg from 'figma:asset/SquareCanisterSet.jpg';
 import roundTiffinImg from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
+import roundTiffinImgMedium from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
+import roundTiffinImgBig from 'figma:asset/fb40f4553e53d7ed0cb4e22c1998041d5226b73b.jpg';
 import squareTiffinImg from 'figma:asset/SquareTiffin.jpg';
 import poojaSilverBoxImg from 'figma:asset/PoojaSilverBox.png';
 import tiffinKingDuoImg from 'figma:asset/new-SquareTiffin.jpg';
@@ -241,7 +243,31 @@ export function ProductsSection() {
       name: 'Round Tiffin',
       image: roundTiffinImg,
       details: 'Available in 3 sizes',
-      size: 'Small 300ml | Medium 400ml | Big 600ml',
+      size: 'Small 300ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Secure Locking Mechanism',
+        'Leak-Proof Design',
+        'Perfect for Travel & Office'
+      ]
+    },
+    {
+      name: 'Round Tiffin',
+      image: roundTiffinImgMedium,
+      details: 'Available in 3 sizes',
+      size: 'Medium 400ml',
+      highlights: [
+        'Premium Quality Stainless Steel',
+        'Secure Locking Mechanism',
+        'Leak-Proof Design',
+        'Perfect for Travel & Office'
+      ]
+    },
+    {
+      name: 'Round Tiffin',
+      image: roundTiffinImgBig,
+      details: 'Available in 3 sizes',
+      size: 'Big 600ml',
       highlights: [
         'Premium Quality Stainless Steel',
         'Secure Locking Mechanism',
